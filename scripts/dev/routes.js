@@ -4,7 +4,7 @@
         var homeState = {
             name: 'home',
             url: '/',
-            templateUrl: 'views/index.html'
+            templateUrl: 'views/home.html'
         };
         var profileState = {
             name: 'profile',
