@@ -1,0 +1,30 @@
+{
+  "name": "sahilbabbar.com",
+  "version": "1.0.0",
+  "description": "Website about Sahil Babbar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilbabbar/sahilbabbar.com.git"
+  },
+  "keywords": [
+    "Sahil",
+    "Babbar"
+  ],
+  "author": "Sahil Babbar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahilbabbar/sahilbabbar.com/issues"
+  },
+  "homepage": "https://github.com/sahilbabbar/sahilbabbar.com#readme",
+  "devDependencies": {
+    "angular": "^1.6.5",
+    "angular-animate": "^1.6.5",
+    "angular-aria": "^1.6.5",
+    "angular-material": "^1.1.4",
+    "angular-ui-router": "^1.0.3"
+  }
+}
