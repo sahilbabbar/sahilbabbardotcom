@@ -1,0 +1,13 @@
+@import '~normalize.css/normalize.css';
+
+$primary-color: #06479E;
+$secondary-color: #fff;
+$accent-color: tomato;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: $primary-color;
+}
