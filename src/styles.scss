@@ -1,13 +1,18 @@
 @import '~normalize.css/normalize.css';
 
+// Colors
 $primary-color: #06479E;
 $secondary-color: #fff;
-$accent-color: tomato;
+$accent-color: tomato; //TODO: Choose an accent color
 
+// Fonts
+$serif: 'Playfair Display', serif;
+$sans-serif: 'Lato', sans-serif;
+
+// Universal Styles
 html, body {
   height: 100%;
 }
-
 body {
   background-color: $primary-color;
 }
