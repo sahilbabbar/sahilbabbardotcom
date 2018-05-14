@@ -1,18 +1,18 @@
 @import '~normalize.css/normalize.css';
 
+// ------------------------------------------
+// Universal Styles
+// ------------------------------------------
+
 // Colors
-$primary-color: #06479E;
-$secondary-color: #fff;
-$accent-color: tomato; //TODO: Choose an accent color
+$primary-color: #181F29;
+$secondary-color: #06479E;
+$mute-color: #afafaf;
 
 // Fonts
 $serif: 'Playfair Display', serif;
 $sans-serif: 'Lato', sans-serif;
 
-// Universal Styles
 html, body {
   height: 100%;
-}
-body {
-  background-color: $primary-color;
 }
