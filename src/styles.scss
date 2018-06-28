@@ -5,8 +5,9 @@
 // ------------------------------------------
 
 // Colors
-$primary-color: #181F29;
-$secondary-color: #06479E;
+$primary-color: #06479E;
+$secondary-color: #181F29;
+$tertiary-color: #ffffff;
 $mute-color: #afafaf;
 
 // Fonts
@@ -15,4 +16,17 @@ $sans-serif: 'Lato', sans-serif;
 
 html, body {
   height: 100%;
+  background-color: $primary-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+.margin-r-1 {
+  margin-right: 1rem;
+}
+
+.padding-3320 {
+  padding: 3vw 3vw 2vw 0;
 }

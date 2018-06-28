@@ -8,22 +8,22 @@ main {
   padding: 5vh 5vw;
 
   article {
+    align-items: center;
     display: flex;
-    flex-direction: column;
     padding: 5vw;
 
     header {
-      color: $primary-color;
-      font-family: $serif;
-      font-size: 3rem;
-      font-weight: 600;
+      color: $tertiary-color;
+      font-family: $sans-serif;
+      font-size: 4rem;
+      font-weight: 200;
     }
 
     section {
-      color: $primary-color;
+      color: $tertiary-color;
       font-family: $sans-serif;
-      font-size: 1.2rem;
-      font-weight: 400;
+      font-size: 1.5rem;
+      font-weight: 300;
       padding: 2vw 0 2vw 0;
     }
 
@@ -39,7 +39,8 @@ main {
         margin-right: 5vw;
       }
     }
-
   }
-
+}
+.profile-picture {
+  width: 200px;
 }
