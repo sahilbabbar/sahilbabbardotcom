@@ -1,0 +1,71 @@
+.container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding: 0 5vw;
+}
+.heading {
+  color: #ffffff;
+  font-size: 7vw;
+  font-weight: 200;
+}
+.primary-font {
+  font-family: 'Lato', sans-serif;
+}
+.description {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-top: 7vh;
+  padding-right: 5%;
+}
+.margin-r-1 {
+  margin-right: 2vw;
+}
+.social-profiles {
+  margin-top: 7vh;
+}
+.profile-image img {
+  width: 200px;
+  border-radius: 5%;
+}
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .heading {
+    font-size: 50px;
+  }
+  .margin-r-1 {
+    margin-right: 5%;
+  }
+  .profile-image {
+    display: none;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 768px) {
+  .heading {
+    font-size: 60px;
+  }
+  .margin-r-1 {
+    margin-right: 5%;
+  }
+}
+@media screen and (min-width: 880px) and (max-width: 1440px) {
+  .heading {
+    font-size: 80px;
+  }
+  .description {
+    font-size: 30px;
+  }
+  .margin-r-1 {
+    margin-right: 3%;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .description {
+    font-size: 30px;
+  }
+}
