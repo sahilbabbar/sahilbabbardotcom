@@ -2,15 +2,20 @@
 // Universal Styles
 // ------------------------------------------
 
-// Colors
+/*
+    Colors
+ */
 $primary-color: #06479E;
-$secondary-color: #181F29;
-$tertiary-color: #ffffff;
+$secondary-color: #ffffff;
+$tertiary-color: #181F29;
 $mute-color: #afafaf;
+$accent-color: #0DF4FF;
 
-// Fonts
-$serif: 'Playfair Display', serif;
-$sans-serif: 'Lato', sans-serif;
+/*
+    Fonts
+ */
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'Roboto', serif;
 
 html, body {
   background-color: $primary-color;
@@ -20,4 +25,33 @@ html, body {
 
 a {
   text-decoration: none;
+}
+
+/*
+    Margins
+ */
+.margin-r-1 {
+    margin-right: 2vw;
+}
+.margin-left-10 {
+    margin-left: 10px;
+}
+.vertical-space {
+    margin-bottom: 3%;
+}
+
+/*
+    Buttons
+ */
+.button {
+    background: $primary-color;
+    color: $mute-color;
+    font-family: $primary-font;
+    font-size: 25px;
+    border: none;
+    padding: 10px;
+}
+.button:hover {
+    color: $secondary-color;
+    cursor: pointer;
 }
