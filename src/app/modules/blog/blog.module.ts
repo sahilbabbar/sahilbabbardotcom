@@ -1,15 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-import { BlogRoutingModule } from './blog-routing.module';
-import { TopicsComponent } from './components/topics/topics.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {HomeComponent} from './components/home/home.component';
+import {BlogRoutingModule} from './blog-routing.module';
 import { PostComponent } from './components/post/post.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    BlogRoutingModule
-  ],
-  declarations: [TopicsComponent, PostComponent]
+    imports: [
+        CommonModule,
+        BlogRoutingModule
+    ],
+    declarations: [HomeComponent, PostComponent]
 })
 export class BlogModule { }

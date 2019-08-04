@@ -1,0 +1,44 @@
+@import '../../../../../assets/styles/mixins/colors';
+@import '../../../../../assets/styles/mixins/typography';
+
+.navbar {
+    align-items: center;
+    display: flex;
+    background-color: $primary-color;
+    color: $tertiary-color;
+    font-family: $primary-font;
+    height: 60px;
+    padding: 0 5vw;
+
+    .navbar-item {
+        margin-right: 25px;
+
+        &:first-child {
+            color: $muted-color; //TODO: Doesn't fit on blue bg.
+        }
+
+        &.active {
+            border-bottom: 2px solid $accent-color; //TODO: Better way to make it active.
+        }
+    }
+}
+.post-container {
+    padding: 5vh 5vw;
+    width: 50vw;
+
+    .heading {
+        color: $primary-color;
+        font-family: $secondary-font;
+        font-size: 3vw;
+        font-weight: 300;
+        margin: 10px 0;
+    }
+
+    .sub-heading {
+        color: $secondary-color;
+        font-family: $primary-font;
+        font-size: 20px;
+        font-weight: 300;
+        margin: 10px 0 80px 0;
+    }
+}
