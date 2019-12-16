@@ -1,24 +1,6 @@
 @import '../../../../../assets/styles/mixins/colors';
 @import '../../../../../assets/styles/mixins/typography';
 
-.navbar {
-    align-items: center;
-    display: flex;
-    background-color: $primary-color;
-    color: $tertiary-color;
-    font-family: $primary-font;
-    height: 60px;
-    padding: 0 5vw;
-
-    .navbar-item {
-        margin-right: 25px;
-
-        &:first-child {
-            color: $muted-color; //TODO: Doesn't fit on blue bg.
-        }
-    }
-}
-
 .blog-container {
     padding: 5vh 5vw;
     width: 50vw;
@@ -77,5 +59,6 @@
     &:hover {
         border-bottom: 6px solid $accent-color; //TODO: Add transition.
         cursor: pointer;
+        transition: 0.3s;
     }
 }

@@ -1,0 +1,26 @@
+@import '../../../../../assets/styles/mixins/colors';
+@import '../../../../../assets/styles/mixins/typography';
+
+.navbar {
+    align-items: center;
+    display: flex;
+    background-color: $primary-color;
+    color: $tertiary-color;
+    font-family: $primary-font;
+    height: 60px;
+    padding: 0 5vw;
+
+    .navbar-item {
+        margin-right: 25px;
+
+        &:first-child {
+            color: $muted-color; //TODO: Doesn't fit on blue bg.
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: $accent-color;
+            transition: 0.3s;
+        }
+    }
+}
