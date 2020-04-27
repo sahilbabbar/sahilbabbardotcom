@@ -1,0 +1,37 @@
+@import '../../../../../assets/styles/variables/typography';
+@import '../../../../../assets/styles/variables/colors';
+
+.container_post_preview {
+    border-bottom: 2px solid #aaa;
+    transition: border 0.5s ease;
+    width: 30vw;
+
+    &:hover {
+        cursor: pointer;
+        border-bottom: 10px solid $primary-color;
+    }
+
+    .hashtags {
+        display: flex;
+
+        div {
+            color: $muted-color;
+            font-family: $primary-font;
+        }
+    }
+
+    p {
+        margin: 2vw 0;
+    }
+
+    h3 {
+        color: $primary-color;
+        margin-top: 1vh;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container_post_preview {
+        width: 100%;
+    }
+}

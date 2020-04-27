@@ -1,15 +1,25 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-import { BlogRoutingModule } from './blog-routing.module';
-import { TopicsComponent } from './components/topics/topics.component';
-import { PostComponent } from './components/post/post.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {HomeComponent} from './components/home/home.component';
+import {BlogRoutingModule} from './blog-routing.module';
+import {PostComponent} from './components/post/post.component';
+import {SharedModule} from '../shared/shared.module';
+import {PostPreviewComponent} from './components/post-preview/post-preview.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {MarkdownModule} from 'ngx-markdown';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    BlogRoutingModule
-  ],
-  declarations: [TopicsComponent, PostComponent]
+    imports: [
+        CommonModule,
+        BlogRoutingModule,
+        SharedModule,
+        HttpClientModule,
+        MarkdownModule.forRoot({ loader: HttpClient })
+    ],
+    exports: [
+        PostPreviewComponent
+    ],
+    declarations: [HomeComponent, PostComponent, PostPreviewComponent]
 })
-export class BlogModule { }
+export class BlogModule {
+}

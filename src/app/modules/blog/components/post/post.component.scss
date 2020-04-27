@@ -1,0 +1,42 @@
+@import '../../../../../assets/styles/variables/colors';
+@import '../../../../../assets/styles/variables/typography';
+
+.container_post {
+    padding: 5vh 5vw;
+    width: 80vw;
+
+    img {
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container_post {
+        width: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .container_post {
+        width: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+@media only screen and (max-width: 1024px) {
+    .container_post {
+        width: auto;
+
+        img {
+            width: 70vw;
+        }
+
+    }
+}

@@ -1,0 +1,36 @@
+@import '../../../../../assets/styles/variables/colors';
+@import '../../../../../assets/styles/variables/typography';
+
+.navbar {
+    align-items: center;
+    display: flex;
+    background-color: $primary-color;
+    color: $tertiary-color;
+    height: 60px;
+    padding: 0 5vw;
+
+    .navbar-item {
+        color: $tertiary-color;
+        font-family: $primary-font;
+        margin-right: 25px;
+
+        &:first-child {
+            color: $accent-color;
+            transition: color 0.5s ease-in;
+
+            &:hover {
+                color: $tertiary-color;
+                transition: color 0.5s ease-out;
+            }
+        }
+
+        &:nth-child(2) {
+            border-bottom: 2px solid $accent-color;
+        }
+
+        &:hover {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
+}
