@@ -10,7 +10,7 @@ This write-up talks about the exact situation, primarily involving the areas of 
 
 ## Background
 
-An enterprise product with a large codebase(> LOC) is using a particular UI framework say **UIF<sub>OLD</sub>** based on an old design system say **DS<sub>OLD</sub>**, developed lots of years back. Now, the time arrives when the entire organisation's branding is being overhauled, thus giving birth to a new design system say **DS<sub>NEW</sub>** and also **UIF<sub>NEW</sub>**. A new development team is formed and given the responsibility to develop a new framework on top DS<sub>NEW</sub> namely UIF<sub>NEW</sub>.
+An enterprise product with a large codebase(1M+ LOC) is using a particular UI framework say **UIF<sub>OLD</sub>** based on an old design system say **DS<sub>OLD</sub>**, developed lots of years back. Now, the time arrives when the entire organisation's branding is being overhauled, thus giving birth to a new design system say **DS<sub>NEW</sub>** and also **UIF<sub>NEW</sub>**. A new development team is formed and given the responsibility to develop a new framework on top DS<sub>NEW</sub> namely UIF<sub>NEW</sub>.
 
 This situation brings us to consider the following aspects:
 
