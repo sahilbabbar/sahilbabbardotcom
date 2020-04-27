@@ -1,0 +1,180 @@
+/*  --------------------
+    Typography
+    -------------------- */
+@import './colors';
+
+$primary-font: 'Source Sans Pro', 'Arial', sans-serif;
+$secondary-font: 'Livvic', 'Arial', sans-serif;
+$accent-font: Serif;
+
+* {
+    color: $secondary-color_2;
+    font-family: $secondary-font;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: $primary-color;
+        text-decoration: underline;
+    }
+}
+
+h1 {
+    color: $primary-color;
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 3vw;
+    margin: 2vw 0;
+
+    label {
+        color: $primary-color;
+        font-family: $primary-font;
+        font-size: 3vw;
+        font-weight: 300;
+    }
+}
+
+h2 {
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin: 5vw 0 1vw;
+}
+
+h3 {
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: 2vw;
+    font-weight: 400;
+    margin: 5vw 0 1vw;
+}
+
+h4 {
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin: 2vw 0 1vw;
+}
+
+p {
+    &.description_focus {
+        color: $secondary-color;
+        font-family: $primary-font;
+        font-size: 1.8vw;
+        font-weight: 300;
+        margin: 1vw 0;
+    }
+
+    .description {
+        color: $secondary-color;
+        font-family: $primary-font;
+        font-size: 25px;
+    }
+}
+
+blockquote {
+    border-left: 3px solid #06479e;
+    padding-left: 15px;
+
+    * {
+        color: $primary-color;
+    }
+}
+
+code {
+    color: $primary-color;
+}
+
+pre code * {
+    font-family: 'Fira Code', monospace;
+    font-size: initial;
+}
+
+pre.line-numbers.language-scss {
+    font-size: initial;
+}
+
+pre.line-numbers.language-typescript {
+    font-size: initial;
+}
+
+.text_muted {
+    color: $muted-color;
+}
+
+.width_30 {
+    width: 30vw !important;
+}
+
+.hr_bold {
+    border: 5px solid $primary-color;
+    margin: 10vh 0 2vh;
+}
+
+@media only screen and (max-width: 425px) {
+    h1 {
+        font-size: 10vw;
+
+        label {
+            font-size: 10vw;
+        }
+    }
+    h2 {
+        font-size: 8vw;
+        margin-top: 10vh;
+    }
+    h3 {
+        font-size: 6vw;
+        margin-top: 10vh;
+    }
+    h4 {
+        font-size: 5vw;
+    }
+    p {
+        &.description_focus {
+            font-size: 5vw;
+        }
+
+        &.description {
+            font-size: 3vw;
+        }
+    }
+    blockquote {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 426px) {
+    h1 {
+        font-size: 8vw;
+
+        label {
+            font-size: 8vw;
+        }
+    }
+    h2 {
+        font-size: 6vw;
+        margin-top: 10vh;
+    }
+    h3 {
+        font-size: 4vw;
+        margin-top: 10vh;
+    }
+    h4 {
+        font-size: 3vw;
+    }
+    p {
+        &.description_focus {
+            font-size: 3vw;
+        }
+
+        &.description {
+            font-size: 2vw;
+        }
+    }
+}

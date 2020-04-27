@@ -1,44 +1,42 @@
-@import '../../../../../assets/styles/mixins/colors';
-@import '../../../../../assets/styles/mixins/typography';
+@import '../../../../../assets/styles/variables/colors';
+@import '../../../../../assets/styles/variables/typography';
 
-.navbar {
-    align-items: center;
-    display: flex;
-    background-color: $primary-color;
-    color: $tertiary-color;
-    font-family: $primary-font;
-    height: 60px;
-    padding: 0 5vw;
+.container_post {
+    padding: 5vh 5vw;
+    width: 80vw;
 
-    .navbar-item {
-        margin-right: 25px;
-
-        &:first-child {
-            color: $muted-color; //TODO: Doesn't fit on blue bg.
-        }
-
-        &.active {
-            border-bottom: 2px solid $accent-color; //TODO: Better way to make it active.
-        }
+    img {
+        width: 30vw;
     }
 }
-.post-container {
-    padding: 5vh 5vw;
-    width: 50vw;
 
-    .heading {
-        color: $primary-color;
-        font-family: $secondary-font;
-        font-size: 3vw;
-        font-weight: 300;
-        margin: 10px 0;
+@media only screen and (max-width: 425px) {
+    .container_post {
+        width: auto;
+
+        img {
+            width: 100%;
+        }
     }
 
-    .sub-heading {
-        color: $secondary-color;
-        font-family: $primary-font;
-        font-size: 20px;
-        font-weight: 300;
-        margin: 10px 0 80px 0;
+}
+@media only screen and (max-width: 768px) {
+    .container_post {
+        width: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+@media only screen and (max-width: 1024px) {
+    .container_post {
+        width: auto;
+
+        img {
+            width: 70vw;
+        }
+
     }
 }

@@ -7,7 +7,7 @@ const routes: Routes = [
         loadChildren: './modules/bio/bio.module#BioModule'
     },
     {
-        path: 'blog',
+        path: 'blog/MigratingEnterpriseAngularAppToAnotherDesignSystem',
         loadChildren: './modules/blog/blog.module#BlogModule'
     },
     {

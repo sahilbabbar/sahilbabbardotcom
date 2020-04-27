@@ -4,14 +4,22 @@ import {HomeComponent} from './components/home/home.component';
 import {BlogRoutingModule} from './blog-routing.module';
 import {PostComponent} from './components/post/post.component';
 import {SharedModule} from '../shared/shared.module';
+import {PostPreviewComponent} from './components/post-preview/post-preview.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {MarkdownModule} from 'ngx-markdown';
 
 @NgModule({
     imports: [
         CommonModule,
         BlogRoutingModule,
-        SharedModule
+        SharedModule,
+        HttpClientModule,
+        MarkdownModule.forRoot({ loader: HttpClient })
     ],
-    declarations: [HomeComponent, PostComponent]
+    exports: [
+        PostPreviewComponent
+    ],
+    declarations: [HomeComponent, PostComponent, PostPreviewComponent]
 })
 export class BlogModule {
 }
