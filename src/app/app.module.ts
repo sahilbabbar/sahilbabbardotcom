@@ -3,8 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {MarkdownModule} from 'ngx-markdown';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -14,7 +13,9 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
         BrowserModule,
         AppRoutingModule
     ],
-    providers: [],
+    providers: [
+        {provide : LocationStrategy , useClass: HashLocationStrategy}
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
