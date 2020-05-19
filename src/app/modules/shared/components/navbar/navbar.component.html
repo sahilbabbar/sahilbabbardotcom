@@ -1,8 +1,10 @@
 <div class="navbar">
-    <div class="navbar-item" routerLink="home">
-        Sahil Babbar
-    </div>
-    <div class="navbar-item">
-        Blog
+    <div
+        class="navbar-item"
+        *ngFor="let s of items"
+        routerLink="{{ s.url }}"
+        [ngClass]="s.isHighlighted ? 'highlighted' : ''"
+    >
+        {{ s.name }}
     </div>
 </div>

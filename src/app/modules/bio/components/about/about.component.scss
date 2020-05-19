@@ -1,0 +1,15 @@
+@import '../../../../../assets/styles/variables/colors';
+@import '../../../../../assets/styles/variables/typography';
+@import '../../../../../assets/styles/layout';
+
+.section_about {
+
+    &:nth-child(1) {
+        margin-top: 0;
+    }
+
+    div {
+
+        margin-top: 5vw;
+    }
+}

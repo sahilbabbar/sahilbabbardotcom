@@ -7,7 +7,7 @@
     background-color: $primary-color;
     color: $tertiary-color;
     height: 60px;
-    padding: 0 5vw;
+    padding: 0 5vh;
 
     .navbar-item {
         color: $tertiary-color;
@@ -24,7 +24,7 @@
             }
         }
 
-        &:nth-child(2) {
+        &.highlighted {
             border-bottom: 2px solid $accent-color;
         }
 
@@ -34,3 +34,4 @@
         }
     }
 }
+

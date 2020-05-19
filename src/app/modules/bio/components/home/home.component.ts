@@ -1,4 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {NavItem} from '../../../shared/utilities/NavItem';
 
 @Component({
     selector: 'sb-home',
@@ -7,8 +8,22 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+    homeNavItems: NavItem[];
+    homePageNavCSS: string;
+
     constructor() {}
 
-    ngOnInit() {}
-
+    ngOnInit() {
+        this.homeNavItems = [
+            {
+                name: 'About',
+                url: 'about'
+            },
+            {
+                name: 'Projects',
+                url: 'projects'
+            }
+        ];
+        this.homePageNavCSS = 'accentTexts';
+    }
 }

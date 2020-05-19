@@ -1,0 +1,39 @@
+<sb-navbar [items]="aboutNavItems"></sb-navbar>
+
+<div class="container">
+    <h2>About</h2>
+    <div class="row">
+        <div class="col_75">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus adipisci beatae blanditiis consequatur, consequuntur
+                cumque debitis delectus dolore dolores earum ex inventore
+                labore, maxime necessitatibus nemo nobis quos similique
+                voluptatum!
+            </p>
+        </div>
+        <div class="col_25">
+            <img
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--u9o6dteO--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/301083/250acba6-4c7d-4bdb-969b-420c8e0ab608.png"
+            />
+        </div>
+    </div>
+
+    <div *ngFor="let w of aboutData" class="section_about">
+        <h4>{{ w.section | titlecase }}</h4>
+        <div *ngFor="let d of w.data">
+            <h5>{{ d.designation |  titlecase}}, {{ d.company | titlecase }}</h5>
+            <h5>{{ d.startDate | titlecase }} - {{ d.endDate| titlecase }} ({{ d.place | titlecase }})</h5>
+            {{ d.body.description }}
+            <ul *ngFor="let b of d.body.bullets">
+                <li>
+                    {{ b }}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h3>Learning</h3>
+    <h3>Building</h3>
+    <h3>Recognition</h3>
+</div>
+<sb-footer></sb-footer>

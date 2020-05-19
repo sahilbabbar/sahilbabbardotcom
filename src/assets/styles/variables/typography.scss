@@ -26,13 +26,13 @@ h1 {
     color: $primary-color;
     font-family: $primary-font;
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 50px;
     margin: 2vw 0;
 
     label {
         color: $primary-color;
         font-family: $primary-font;
-        font-size: 3vw;
+        font-size: 50px;
         font-weight: 300;
     }
 }
@@ -40,37 +40,44 @@ h1 {
 h2 {
     color: $primary-color;
     font-family: $primary-font;
-    font-size: 2.5vw;
+        font-size: 40px;
     font-weight: 600;
-    margin: 5vw 0 1vw;
+    margin: 2vw 0;
 }
 
 h3 {
     color: $primary-color;
     font-family: $primary-font;
-    font-size: 2vw;
+    font-size: 35px;
     font-weight: 400;
-    margin: 5vw 0 1vw;
+    margin: 2vw 0;
 }
 
 h4 {
     color: $primary-color;
     font-family: $primary-font;
-    font-size: 1.6vw;
+    font-size: 25px;
     font-weight: 600;
-    margin: 2vw 0 1vw;
+    margin: 2vw 0;
+}
+
+h5 {
+    font-family: $primary-font;
+    font-size: 19px;
+    color: $secondary-color;
+    margin: 5px 0;
 }
 
 p {
     &.description_focus {
         color: $secondary-color;
         font-family: $primary-font;
-        font-size: 1.8vw;
+        font-size: 25px;
         font-weight: 300;
         margin: 1vw 0;
     }
 
-    .description {
+    &.description {
         color: $secondary-color;
         font-family: $primary-font;
         font-size: 25px;
@@ -116,65 +123,65 @@ pre.line-numbers.language-typescript {
     margin: 10vh 0 2vh;
 }
 
-@media only screen and (max-width: 425px) {
-    h1 {
-        font-size: 10vw;
-
-        label {
-            font-size: 10vw;
-        }
-    }
-    h2 {
-        font-size: 8vw;
-        margin-top: 10vh;
-    }
-    h3 {
-        font-size: 6vw;
-        margin-top: 10vh;
-    }
-    h4 {
-        font-size: 5vw;
-    }
-    p {
-        &.description_focus {
-            font-size: 5vw;
-        }
-
-        &.description {
-            font-size: 3vw;
-        }
-    }
-    blockquote {
-        margin: 0;
-    }
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 426px) {
-    h1 {
-        font-size: 8vw;
-
-        label {
-            font-size: 8vw;
-        }
-    }
-    h2 {
-        font-size: 6vw;
-        margin-top: 10vh;
-    }
-    h3 {
-        font-size: 4vw;
-        margin-top: 10vh;
-    }
-    h4 {
-        font-size: 3vw;
-    }
-    p {
-        &.description_focus {
-            font-size: 3vw;
-        }
-
-        &.description {
-            font-size: 2vw;
-        }
-    }
-}
+//@media only screen and (max-width: 425px) {
+//    h1 {
+//        font-size: 10vw;
+//
+//        label {
+//            font-size: 10vw;
+//        }
+//    }
+//    h2 {
+//        font-size: 8vw;
+//        margin-top: 10vh;
+//    }
+//    h3 {
+//        font-size: 6vw;
+//        margin-top: 10vh;
+//    }
+//    h4 {
+//        font-size: 5vw;
+//    }
+//    p {
+//        &.description_focus {
+//            font-size: 5vw;
+//        }
+//
+//        &.description {
+//            font-size: 3vw;
+//        }
+//    }
+//    blockquote {
+//        margin: 0;
+//    }
+//}
+//
+//@media only screen and (max-width: 1024px) and (min-width: 426px) {
+//    h1 {
+//        font-size: 8vw;
+//
+//        label {
+//            font-size: 8vw;
+//        }
+//    }
+//    h2 {
+//        font-size: 6vw;
+//        margin-top: 10vh;
+//    }
+//    h3 {
+//        font-size: 4vw;
+//        margin-top: 10vh;
+//    }
+//    h4 {
+//        font-size: 3vw;
+//    }
+//    p {
+//        &.description_focus {
+//            font-size: 3vw;
+//        }
+//
+//        &.description {
+//            font-size: 2vw;
+//        }
+//    }
+//}
