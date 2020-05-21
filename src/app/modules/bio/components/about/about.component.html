@@ -11,29 +11,108 @@
                 labore, maxime necessitatibus nemo nobis quos similique
                 voluptatum!
             </p>
-        </div>
-        <div class="col_25">
-            <img
-                src="https://res.cloudinary.com/practicaldev/image/fetch/s--u9o6dteO--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/301083/250acba6-4c7d-4bdb-969b-420c8e0ab608.png"
-            />
-        </div>
-    </div>
+            <div style="display: flex; flex-direction: column;">
+                <div style="border-bottom: 0.5px solid #aaa;">
+                    <h4>{{ workData.section | titlecase }}</h4>
+                    <div
+                        *ngFor="let d of workData.data"
+                        class="margin-bottom_5"
+                    >
+                        <h5>
+                            {{ d.designation | titlecase }},
+                            {{ d.company | titlecase }}
+                        </h5>
+                        <h5 class="margin-bottom_5px">
+                            {{ d.startDate | titlecase }} -
+                            {{ d.endDate | titlecase }} ({{
+                                d.place | titlecase
+                            }})
+                        </h5>
+                        <p>
+                            {{ d.body.description }}
+                        </p>
+                        <ul *ngFor="let b of d.body.bullets">
+                            <li>
+                                {{ b }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-    <div *ngFor="let w of aboutData" class="section_about">
-        <h4>{{ w.section | titlecase }}</h4>
-        <div *ngFor="let d of w.data">
-            <h5>{{ d.designation |  titlecase}}, {{ d.company | titlecase }}</h5>
-            <h5>{{ d.startDate | titlecase }} - {{ d.endDate| titlecase }} ({{ d.place | titlecase }})</h5>
-            {{ d.body.description }}
-            <ul *ngFor="let b of d.body.bullets">
-                <li>
-                    {{ b }}
-                </li>
-            </ul>
+                <div style="border-bottom: 0.5px solid #aaa;">
+                    <h4>{{ learnData.section | titlecase }}</h4>
+                    <div
+                        *ngFor="let d of learnData.data"
+                        class="margin-bottom_5"
+                    >
+                        <h5>
+                            {{ d.title | titlecase }}
+                        </h5>
+                        <h5>
+                            {{ d.institution | titlecase }},
+                            {{ d.place | titlecase }}
+                        </h5>
+                        <h5>
+                            {{ d.startDate | titlecase }} -
+                            {{ d.endDate | titlecase }}
+                        </h5>
+                        {{ d.body.description }}
+                        <ul *ngFor="let b of d.body.bullets">
+                            <li>
+                                {{ b }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="border-bottom: 0.5px solid #aaa;">
+                    <h4>{{ buildData.section | titlecase }}</h4>
+                    <div
+                        *ngFor="let d of buildData.data"
+                        class="margin-bottom_5"
+                    >
+                        <h5>
+                            {{ d.title | titlecase }}
+                        </h5>
+                        <h5>
+                            {{ d.institution | titlecase }},
+                            {{ d.place | titlecase }}
+                        </h5>
+                        <h5>
+                            {{ d.startDate | titlecase }} -
+                            {{ d.endDate | titlecase }}
+                        </h5>
+                        {{ d.body.description }}
+                        <ul *ngFor="let b of d.body.bullets">
+                            <li>
+                                {{ b }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="border-bottom: 0.5px solid #aaa;">
+                    <h4>{{ recogData.section | titlecase }}</h4>
+                    <div
+                        *ngFor="let d of recogData.data"
+                        class="margin-bottom_5"
+                    >
+                        <h5>
+                            {{ d.title | titlecase }}
+                        </h5>
+                        <h5>{{ d.place | titlecase }}</h5>
+                        <h5>{{ d.date | uppercase }}</h5>
+                        {{ d.body.description }}
+                        <ul *ngFor="let b of d.body.bullets">
+                            <li>
+                                {{ b }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="col_25"></div>
     </div>
-    <h3>Learning</h3>
-    <h3>Building</h3>
-    <h3>Recognition</h3>
 </div>
 <sb-footer></sb-footer>

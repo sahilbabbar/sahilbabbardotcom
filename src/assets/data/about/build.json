@@ -1,0 +1,31 @@
+{
+    "section": "building",
+    "data": [
+        {
+            "title": "Ericsson Mediation UI SDK",
+            "institution": "Ericsson R&D",
+            "place": "New Delhi",
+            "startDate": "mar 2018",
+            "endDate": "present",
+            "body": {
+                "description": "Building upon an initial set of components of a UI SDK and making them production ready for development teams to build enterprise products upon it. Working closely with software, architecture and UX teams to design and develop new components as well as pushing the overall SDK towards stability and scalability; under minimal supervision.",
+                "bullets": [
+                    "Tech - Angular, TypeScript, RxJS, HTML5, SCSS"
+                ]
+            }
+        },
+        {
+            "title": "Stencil",
+            "institution": "Systematic System Solutions",
+            "place": "New Delhi",
+            "startDate": "aug 2016",
+            "endDate": "dec 2016",
+            "body": {
+                "description": "eCommerce plaLorm for all size of businesses. It is being used by various companies. My role was to built the user interface, so5ware architecture and manage the development team.",
+                "bullets": [
+                    "Tech - AngularJS, Bootstrap, Spring MVC, Hibernate, MySQL."
+                ]
+            }
+        }
+    ]
+}

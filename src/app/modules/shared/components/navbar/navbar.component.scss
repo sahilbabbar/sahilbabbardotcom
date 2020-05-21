@@ -17,21 +17,20 @@
         &:first-child {
             color: $accent-color;
             transition: color 0.5s ease-in;
-
-            &:hover {
-                color: $tertiary-color;
-                transition: color 0.5s ease-out;
-            }
         }
 
         &.highlighted {
             border-bottom: 2px solid $accent-color;
+
+            &:hover {
+                color: $tertiary-color !important;
+            }
         }
 
         &:hover {
+            color: $accent-color !important;
             cursor: pointer;
-            transition: 0.3s;
+            transition: color 0.5s ease-out;
         }
     }
 }
-

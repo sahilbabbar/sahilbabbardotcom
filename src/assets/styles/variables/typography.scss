@@ -4,12 +4,12 @@
 @import './colors';
 
 $primary-font: 'Source Sans Pro', 'Arial', sans-serif;
-$secondary-font: 'Livvic', 'Arial', sans-serif;
+$secondary-font: 'Source Sans Pro', 'Arial', sans-serif;
 $accent-font: Serif;
 
 * {
     color: $secondary-color_2;
-    font-family: $secondary-font;
+    font-family: $primary-font;
     font-size: 18px;
 }
 
@@ -24,14 +24,14 @@ a {
 
 h1 {
     color: $primary-color;
-    font-family: $primary-font;
-    font-weight: 600;
+    font-family: $secondary-font;
+    font-weight: 300;
     font-size: 50px;
     margin: 2vw 0;
 
     label {
         color: $primary-color;
-        font-family: $primary-font;
+        font-family: $secondary-font;
         font-size: 50px;
         font-weight: 300;
     }
@@ -39,31 +39,32 @@ h1 {
 
 h2 {
     color: $primary-color;
-    font-family: $primary-font;
+    font-family: $secondary-font;
         font-size: 40px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 2vw 0;
 }
 
 h3 {
     color: $primary-color;
-    font-family: $primary-font;
+    font-family: $secondary-font;
     font-size: 35px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 2vw 0;
 }
 
 h4 {
     color: $primary-color;
-    font-family: $primary-font;
+    font-family: $secondary-font;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 2vw 0;
 }
 
 h5 {
-    font-family: $primary-font;
-    font-size: 19px;
+    font-family: $secondary-font;
+    font-size: 18px;
+    font-weight: 600;
     color: $secondary-color;
     margin: 5px 0;
 }
@@ -71,7 +72,7 @@ h5 {
 p {
     &.description_focus {
         color: $secondary-color;
-        font-family: $primary-font;
+        font-family: $secondary-font;
         font-size: 25px;
         font-weight: 300;
         margin: 1vw 0;
@@ -79,7 +80,7 @@ p {
 
     &.description {
         color: $secondary-color;
-        font-family: $primary-font;
+        font-family: $secondary-font;
         font-size: 25px;
     }
 }

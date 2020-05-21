@@ -4,6 +4,7 @@
         *ngFor="let s of items"
         routerLink="{{ s.url }}"
         [ngClass]="s.isHighlighted ? 'highlighted' : ''"
+        [ngStyle]="s.cssStyle"
     >
         {{ s.name }}
     </div>

@@ -1,0 +1,31 @@
+{
+    "section": "working",
+    "data": [
+        {
+            "designation": "software developer",
+            "company": "ericsson global services (R&D)",
+            "place": "gurgaon, IN",
+            "startDate": "may 2018",
+            "endDate": "present",
+            "body": {
+                "description": "This is my first company.",
+                "bullets": [
+                    "Responsible for leading the design, development and maintenance of the unit’s internal enterprise UI SDK; which is being used to develop user interfaces of various other products.",
+                    "Worked in an agile team to deliver an enterprise Angular application with advanced use-cases for telecom operators, around the globe.",
+                    "Worked in a core team to strategise & migrate all apps from old design system to Ericsson’s new design system, keeping costs at minimum & increasing agility."
+                ]
+            }
+        },
+        {
+            "designation": "Technical Lead",
+            "company": "Systematic System Solutions (SSS)",
+            "place": "NEW DELHI, IN",
+            "startDate": "MAY 2015",
+            "endDate": "AUG 2017",
+            "body": {
+                "description": "Part-Time Employment | Responsible for leading the\norganisation in Software Development and Engineering, Product Design and Recruitment. Delivered 10+ client projects.",
+                "bullets": []
+            }
+        }
+    ]
+}

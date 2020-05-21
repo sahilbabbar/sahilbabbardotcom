@@ -17,7 +17,8 @@ export class HomeComponent implements OnInit {
         this.homeNavItems = [
             {
                 name: 'About',
-                url: 'about'
+                url: 'about',
+                cssStyle: {'color': '#fff'}
             },
             {
                 name: 'Projects',

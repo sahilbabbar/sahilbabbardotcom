@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NavItem } from '../../../shared/utilities/NavItem';
-import aboutData from '../../../../../assets/data/about.json';
+import workJson from '../../../../../assets/data/about/work.json';
+import learnJson from '../../../../../assets/data/about/learn.json';
+import buildJson from '../../../../../assets/data/about/build.json';
+import recogJson from '../../../../../assets/data/about/recognition.json';
 
 @Component({
     selector: 'sb-about',
@@ -11,7 +14,10 @@ export class AboutComponent implements OnInit {
 
     aboutNavItems: NavItem[];
 
-    aboutData: any;
+    workData = workJson;
+    learnData = learnJson;
+    buildData = buildJson;
+    recogData = recogJson;
 
     constructor() {}
 
@@ -30,7 +36,5 @@ export class AboutComponent implements OnInit {
                 url: 'blog',
             },
         ];
-
-        this.aboutData = aboutData.about;
     }
 }

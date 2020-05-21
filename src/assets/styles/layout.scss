@@ -16,3 +16,29 @@
         flex-basis: 0;
     }
 }
+
+.margin {
+    &-bottom_ {
+        &10 {
+            margin-bottom: 10%;
+        }
+        &5 {
+            margin-bottom: 5%;
+        }
+        &8 {
+            margin-bottom: 8%;
+        }
+        &5px {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+ul {
+    padding-left: 22px;
+    margin: 10px 0 0 0;
+
+    li::marker {
+        color: red;
+    }
+}
