@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { NavItem } from '../../../shared/utilities/NavItem';
 import workJson from '../../../../../assets/data/about/work.json';
 import learnJson from '../../../../../assets/data/about/learn.json';
-import buildJson from '../../../../../assets/data/about/build.json';
 import recogJson from '../../../../../assets/data/about/recognition.json';
 
 @Component({
@@ -16,7 +15,6 @@ export class AboutComponent implements OnInit {
 
     workData = workJson;
     learnData = learnJson;
-    buildData = buildJson;
     recogData = recogJson;
 
     constructor() {}
@@ -32,8 +30,12 @@ export class AboutComponent implements OnInit {
                 isHighlighted: true,
             },
             {
+                name: 'Projects',
+                url: 'projects',
+            },
+            {
                 name: 'Blog',
-                url: 'blog',
+                url: 'blog/MigratingEnterpriseAngularAppToAnotherDesignSystem',
             },
         ];
     }

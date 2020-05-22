@@ -1,4 +1,6 @@
-<sb-navbar [items]="aboutNavItems"></sb-navbar>
+<div>
+    <sb-navbar [items]="aboutNavItems"></sb-navbar>
+</div>
 
 <div class="container">
     <h2>About</h2>
@@ -11,21 +13,21 @@
                 labore, maxime necessitatibus nemo nobis quos similique
                 voluptatum!
             </p>
-            <div style="display: flex; flex-direction: column;">
-                <div style="border-bottom: 0.5px solid #aaa;">
-                    <h4>{{ workData.section | titlecase }}</h4>
+            <div class="flex_col">
+                <div class="section_about">
+                    <h3>{{ workData.section | titlecase }}</h3>
                     <div
                         *ngFor="let d of workData.data"
                         class="margin-bottom_5"
                     >
-                        <h5>
-                            {{ d.designation | titlecase }},
-                            {{ d.company | titlecase }}
+                        <h5 class="color_primary">
+                            {{ d.designation }},
+                            {{ d.company }}
                         </h5>
                         <h5 class="margin-bottom_5px">
                             {{ d.startDate | titlecase }} -
                             {{ d.endDate | titlecase }} ({{
-                                d.place | titlecase
+                            d.place
                             }})
                         </h5>
                         <p>
@@ -39,18 +41,18 @@
                     </div>
                 </div>
 
-                <div style="border-bottom: 0.5px solid #aaa;">
-                    <h4>{{ learnData.section | titlecase }}</h4>
+                <div class="section_about">
+                    <h3>{{ learnData.section | titlecase }}</h3>
                     <div
                         *ngFor="let d of learnData.data"
                         class="margin-bottom_5"
                     >
-                        <h5>
+                        <h5 class="color_primary">
                             {{ d.title | titlecase }}
                         </h5>
                         <h5>
-                            {{ d.institution | titlecase }},
-                            {{ d.place | titlecase }}
+                            {{ d.institution }},
+                            {{ d.place }}
                         </h5>
                         <h5>
                             {{ d.startDate | titlecase }} -
@@ -65,42 +67,15 @@
                     </div>
                 </div>
 
-                <div style="border-bottom: 0.5px solid #aaa;">
-                    <h4>{{ buildData.section | titlecase }}</h4>
-                    <div
-                        *ngFor="let d of buildData.data"
-                        class="margin-bottom_5"
-                    >
-                        <h5>
-                            {{ d.title | titlecase }}
-                        </h5>
-                        <h5>
-                            {{ d.institution | titlecase }},
-                            {{ d.place | titlecase }}
-                        </h5>
-                        <h5>
-                            {{ d.startDate | titlecase }} -
-                            {{ d.endDate | titlecase }}
-                        </h5>
-                        {{ d.body.description }}
-                        <ul *ngFor="let b of d.body.bullets">
-                            <li>
-                                {{ b }}
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div style="border-bottom: 0.5px solid #aaa;">
-                    <h4>{{ recogData.section | titlecase }}</h4>
+                <div>
+                    <h3>{{ recogData.section | titlecase }}</h3>
                     <div
                         *ngFor="let d of recogData.data"
                         class="margin-bottom_5"
                     >
-                        <h5>
-                            {{ d.title | titlecase }}
+                        <h5 class="color_primary">
+                            {{ d.title }}<span class="color_sec">, {{ d.place }}</span>
                         </h5>
-                        <h5>{{ d.place | titlecase }}</h5>
                         <h5>{{ d.date | uppercase }}</h5>
                         {{ d.body.description }}
                         <ul *ngFor="let b of d.body.bullets">

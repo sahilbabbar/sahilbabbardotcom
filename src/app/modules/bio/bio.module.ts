@@ -6,6 +6,7 @@ import {HomeComponent} from './components/home/home.component';
 import {BlogModule} from '../blog/blog.module';
 import {SharedModule} from '../shared/shared.module';
 import { AboutComponent } from './components/about/about.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { AboutComponent } from './components/about/about.component';
     ],
     declarations: [
         HomeComponent,
-        AboutComponent
+        AboutComponent,
+        ProjectsComponent
     ]
 })
 export class BioModule { }

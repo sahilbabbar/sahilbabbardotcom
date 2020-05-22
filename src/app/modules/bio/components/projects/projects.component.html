@@ -1,0 +1,45 @@
+<sb-navbar [items]="projectsNavItems"></sb-navbar>
+
+<div class="container">
+    <h2>Projects</h2>
+    <div class="row">
+        <div class="col_75">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus adipisci beatae blanditiis consequatur, consequuntur
+                cumque debitis delectus dolore dolores earum ex inventore
+                labore, maxime necessitatibus nemo nobis quos similique
+                voluptatum!
+            </p>
+            <div class="flex_col">
+                <div class="section_projects">
+                    <div
+                        *ngFor="let d of projects.data"
+                        class="margin-bottom_8"
+                    >
+                        <h5 class="color_primary">
+                            {{ d.title
+                            }}<span class="color_sec"
+                                >, {{ d.institution }}</span
+                            >
+                        </h5>
+                        <h5 class="margin-bottom_5px">
+                            {{ d.startDate | titlecase }} -
+                            {{ d.endDate | titlecase }} ({{ d.place }})
+                        </h5>
+                        <p>
+                            {{ d.body.description }}
+                        </p>
+                        <ul *ngFor="let b of d.body.bullets">
+                            <li>
+                                {{ b }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col_25"></div>
+    </div>
+</div>
+<sb-footer></sb-footer>

@@ -1,0 +1,34 @@
+{
+    "projects": {
+        "data": [
+            {
+                "title": "Ericsson Mediation UI SDK",
+                "institution": "Ericsson R&D",
+                "place": "New Delhi",
+                "startDate": "mar 2018",
+                "endDate": "present",
+                "body": {
+                    "description": "Building upon an initial set of components of a UI SDK and making them production ready for development teams to build enterprise products upon it. Working closely with software, architecture and UX teams to design and develop new components as well as pushing the overall SDK towards stability and scalability; under minimal supervision.",
+                    "bullets": [
+                        "Open Source",
+                        "Tech - Angular, TypeScript, RxJS, HTML5, SCSS"
+                    ]
+                }
+            },
+            {
+                "title": "Ericsson Mediation UI SDK",
+                "institution": "Ericsson R&D",
+                "place": "New Delhi",
+                "startDate": "mar 2018",
+                "endDate": "present",
+                "body": {
+                    "description": "Building upon an initial set of components of a UI SDK and making them production ready for development teams to build enterprise products upon it. Working closely with software, architecture and UX teams to design and develop new components as well as pushing the overall SDK towards stability and scalability; under minimal supervision.",
+                    "bullets": [
+                        "Closed Source",
+                        "Tech - Angular, TypeScript, RxJS, HTML5, SCSS"
+                    ]
+                }
+            }
+        ]
+    }
+}

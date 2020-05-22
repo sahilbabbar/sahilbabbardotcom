@@ -6,10 +6,6 @@ const routes: Routes = [
         path: '',
         loadChildren: './modules/bio/bio.module#BioModule'
     },
-    // {
-    //     path: 'about',
-    //     loadChildren: './modules/bio/bio.module#BioModule'
-    // },
     {
         path: 'blog/MigratingEnterpriseAngularAppToAnotherDesignSystem',
         loadChildren: './modules/blog/blog.module#BlogModule'

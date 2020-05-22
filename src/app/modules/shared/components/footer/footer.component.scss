@@ -1,10 +1,11 @@
 @import '../../../../../assets/styles/variables/colors';
 @import '../../../../../assets/styles/variables/typography';
+@import '../../../../../assets/styles/layout';
 
-.footer {
+footer {
     display: flex;
     background: $tertiary-color;
-    padding: 2vh 5vh 5vh;
+    padding: 2vh 5vh;
     flex-shrink: 0;
     justify-content: space-between;
 
@@ -13,12 +14,33 @@
         font-family: $primary-font;
         margin-right: 30px;
 
-        &:hover {
-            color: $primary-color;
+        img {
+            filter: invert(0.7) sepia(0) saturate(1) hue-rotate(0deg) brightness(0.8);
+
+            &:hover {
+                filter: invert(0.7) sepia(0) saturate(1) hue-rotate(0deg) brightness(0.6);
+            }
         }
     }
-    div {
+
+    div, p {
         color: $muted-color;
         font-family: $primary-font;
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    footer {
+        flex-direction: column;
+        padding-top: 4vh;
+
+        div {
+            justify-content: center;
+
+            p {
+                text-align: center;
+            }
+        }
     }
 }

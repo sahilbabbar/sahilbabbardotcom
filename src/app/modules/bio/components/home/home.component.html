@@ -1,17 +1,19 @@
 <div class="container_home">
-    <div class="section_dev">
-        <div class="dev_name">
-            <h1><label>Hi, I'm</label> Sahil Babbar</h1>
+    <div class="boxShadow_banner">
+        <div class="section_dev">
+            <div class="dev_name">
+                <h1><label>Hey, I'm</label> Sahil Babbar</h1>
+            </div>
+            <div class="dev_shortBio">
+                <p class="description_focus">
+                    Hyper Obsessed with Technology & Life, especially Frontend/UI, UX. This is my Web Space.
+                </p>
+            </div>
         </div>
-        <div class="dev_shortBio">
-            <p class="description_focus">
-                Hyper Obsessed with Technology & Life, especially Frontend/UI, UX. This is my Web Space.
-            </p>
-        </div>
+        <sb-navbar [items]="homeNavItems" [cssStyle]="'color: #fff'" [navStyle]="{'position': 'unset', 'width': 'unset'}"></sb-navbar>
     </div>
-    <sb-navbar [items]="homeNavItems" [cssStyle]="'color: #fff'"></sb-navbar>
     <div class="section_home">
-        <h2>Writings</h2>
+        <h3>Writings</h3>
         <div class="post_previews">
             <sb-post-preview routerLink="/blog/MigratingEnterpriseAngularAppToAnotherDesignSystem"></sb-post-preview>
         </div>

@@ -8,16 +8,15 @@
     color: $tertiary-color;
     height: 60px;
     padding: 0 5vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
 
     .navbar-item {
         color: $tertiary-color;
         font-family: $primary-font;
         margin-right: 25px;
-
-        &:first-child {
-            color: $accent-color;
-            transition: color 0.5s ease-in;
-        }
+        transition: color 0.5s ease-in;
 
         &.highlighted {
             border-bottom: 2px solid $accent-color;
@@ -30,7 +29,11 @@
         &:hover {
             color: $accent-color !important;
             cursor: pointer;
-            transition: color 0.5s ease-out;
+            transition: color 0.5s ease-in;
+        }
+
+        &:first-child {
+            color: $accent-color;
         }
     }
 }

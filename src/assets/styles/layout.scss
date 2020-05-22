@@ -1,5 +1,5 @@
 .container {
-    padding: 5vh 5vw;
+    padding: 70px 5vw 10vh 5vw;
     width: 80vw;
 }
 
@@ -40,5 +40,27 @@ ul {
 
     li::marker {
         color: red;
+    }
+}
+
+.boxShadow_ {
+    &banner {
+        box-shadow: 0px 0px 10px 10px #ccc;
+    }
+    &navbar {
+        box-shadow: 0 0 10px 10px #aaa;
+    }
+}
+
+.flex {
+
+    display: flex;
+
+    &.col {
+        flex-direction: column;
+    }
+
+    &.align_center {
+        align-items: center;
     }
 }
