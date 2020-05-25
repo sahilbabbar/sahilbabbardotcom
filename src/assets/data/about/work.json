@@ -8,7 +8,7 @@
             "startDate": "may 2018",
             "endDate": "present",
             "body": {
-                "description": "This is my first company.",
+                "description": "This is the first large-scale corporate company, that I have worked with and continue to do so. Ericsson is a mammoth organisation with huge scale and every contribution makes a large impact. Here, my role largely revolves around Frontend/UX.",
                 "bullets": [
                     "Responsible for leading the design, development and maintenance of the unit’s internal enterprise UI SDK; which is being used to develop user interfaces of various other products.",
                     "Worked in an agile team to deliver an enterprise Angular application with advanced use-cases for telecom operators, around the globe.",
@@ -17,7 +17,18 @@
             }
         },
         {
-            "designation": "Technical Lead",
+            "designation": "UI/UX Developer Intern",
+            "company": "Ericsson Global India (R&D)",
+            "place": "Gurgaon, IN",
+            "startDate": "jan 2016",
+            "endDate": "jun 2016",
+            "body": {
+                "description": "Responsible to design and develop the user interface of one of the Ericsson’s enterprise software, in coordination with UX and software development teams, at BUSS R&D.",
+                "bullets": []
+            }
+        },
+        {
+            "designation": "Technical Consultant",
             "company": "Systematic System Solutions (SSS)",
             "place": "New Delhi, IN",
             "startDate": "MAY 2015",

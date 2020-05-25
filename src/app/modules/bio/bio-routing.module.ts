@@ -18,8 +18,12 @@ const routes: Routes = [
         component: ProjectsComponent,
     },
     {
+        path: 'blog',
+        loadChildren: '../../modules/blog/blog.module#BlogModule'
+    },
+    {
         path: 'blog/MigratingEnterpriseAngularAppToAnotherDesignSystem',
-        loadChildren: './modules/blog/blog.module#BlogModule'
+        loadChildren: '../../modules/blog/blog.module#BlogModule'
     },
     {
         path: '',

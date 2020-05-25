@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NavItem } from '../../../shared/utilities/NavItem';
 import projectsJson from '../../../../../assets/data/projects/projects.json';
 
@@ -6,6 +6,7 @@ import projectsJson from '../../../../../assets/data/projects/projects.json';
     selector: 'sb-projects',
     templateUrl: './projects.component.html',
     styleUrls: ['./projects.component.scss'],
+    encapsulation: ViewEncapsulation.None,
 })
 export class ProjectsComponent implements OnInit {
     projectsNavItems: NavItem[];
@@ -21,18 +22,17 @@ export class ProjectsComponent implements OnInit {
             },
             {
                 name: 'About',
-                url: 'about'
+                url: 'about',
             },
             {
                 name: 'Projects',
                 url: 'projects',
-                isHighlighted: true
+                isHighlighted: true,
             },
             {
                 name: 'Blog',
-                url: 'blog/MigratingEnterpriseAngularAppToAnotherDesignSystem'
+                url: 'blog',
             },
         ];
     }
 }
-

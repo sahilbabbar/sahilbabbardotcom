@@ -1,27 +1,10 @@
-<sb-navbar></sb-navbar>
+<sb-navbar [items]="blogHomeNavItems"></sb-navbar>
 
-<div class="blog-container">
-    <div class="heading">
-        Blog
-    </div>
-    <div class="sub-heading">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut earum, ipsam nam placeat quae quam quos
-        rerum? Hic numquam placeat quisquam sit voluptates. Ab doloribus illum iure libero ullam?
-    </div>
-    <div class="blogs">
-        <div class="card" routerLink="post">
-            <div class="card-heading">
-                Learning BEM
-            </div>
-            <div class="card-hashtags">
-                <div class="hashtag">CSS</div>
-            </div>
-            <div class="card-description">
-                This is very basic introduction to BEM, adhering to all types of learning - newbies or ninjas.
-            </div>
-            <div class="card-footer">
-                8 Aug 2019 2100hrs
-            </div>
-        </div>
+<div class="container">
+    <h2>Writings</h2>
+    <div class="post_previews">
+        <sb-post-preview routerLink="MigratingEnterpriseAngularAppToAnotherDesignSystem"></sb-post-preview>
     </div>
 </div>
+
+<sb-footer></sb-footer>

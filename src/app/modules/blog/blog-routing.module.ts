@@ -5,8 +5,17 @@ import {PostComponent} from './components/post/post.component';
 
 const routes: Routes = [
     {
-        path: '',
+        path: 'MigratingEnterpriseAngularAppToAnotherDesignSystem',
         component: PostComponent
+    },
+    {
+        path: '',
+        component: HomeComponent
+    },
+    {
+        path: '',
+        redirectTo: '',
+        pathMatch: 'full'
     }
 ];
 

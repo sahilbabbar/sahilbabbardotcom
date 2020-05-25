@@ -7,12 +7,26 @@
     <div class="row">
         <div class="col_75">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Accusamus adipisci beatae blanditiis consequatur, consequuntur
-                cumque debitis delectus dolore dolores earum ex inventore
-                labore, maxime necessitatibus nemo nobis quos similique
-                voluptatum!
+                I have been brought up with computers, by programmers from 1995,
+                so my natural inclination is towards technology, software and all the areas
+                involving it. My professional journey began in 2015, when I started
+                working with a startup and then things progressed from there. Over the
+                years, I have been fortunate to work in different areas with different teams
+                in startups and corporates, involving Software Development, Software Engineering,
+                DevOps, Security, User Experience, Product Management and more.
             </p>
+            <p>
+                But, along the way I have realised my fondness about design and thus, have
+                been working in the areas of Frontend Development, User Interface and
+                User Experience.
+            </p>
+        </div>
+        <div class="col_25 flex justify_center">
+            <img src="assets/images/sahil.jpeg" class="img_profile" alt="Sahil's Image">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col_75">
             <div class="flex_col">
                 <div class="section_about">
                     <h3>{{ workData.section | titlecase }}</h3>
@@ -76,7 +90,7 @@
                         <h5 class="color_primary">
                             {{ d.title }}<span class="color_sec">, {{ d.place }}</span>
                         </h5>
-                        <h5>{{ d.date | uppercase }}</h5>
+                        <h5>{{ d.date | titlecase }}</h5>
                         {{ d.body.description }}
                         <ul *ngFor="let b of d.body.bullets">
                             <li>
@@ -87,7 +101,8 @@
                 </div>
             </div>
         </div>
-        <div class="col_25"></div>
+        <div class="col_25">
+        </div>
     </div>
 </div>
 <sb-footer></sb-footer>

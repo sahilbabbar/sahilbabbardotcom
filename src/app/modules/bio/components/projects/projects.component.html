@@ -4,12 +4,13 @@
     <h2>Projects</h2>
     <div class="row">
         <div class="col_75">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Accusamus adipisci beatae blanditiis consequatur, consequuntur
-                cumque debitis delectus dolore dolores earum ex inventore
-                labore, maxime necessitatibus nemo nobis quos similique
-                voluptatum!
+            <p class="margin-bottom_10">
+                Everyone wants to build useful things, either for h(er)imself or
+                for the company s(he) work for, or for a larger group of people,
+                with different variables; but the motivation is to bring about a
+                positive affect. Considering this, I have tried to built some
+                cool and useful things in the past and following is their
+                description.
             </p>
             <div class="flex_col">
                 <div class="section_projects">
@@ -19,13 +20,13 @@
                     >
                         <h5 class="color_primary">
                             {{ d.title
-                            }}<span class="color_sec"
+                            }}<span class="color_sec" *ngIf="d.institution"
                                 >, {{ d.institution }}</span
                             >
                         </h5>
                         <h5 class="margin-bottom_5px">
                             {{ d.startDate | titlecase }} -
-                            {{ d.endDate | titlecase }} ({{ d.place }})
+                            {{ d.endDate | titlecase }}
                         </h5>
                         <p>
                             {{ d.body.description }}
@@ -35,6 +36,13 @@
                                 {{ b }}
                             </li>
                         </ul>
+                        <div class="btn_group" *ngIf="d.body.sourceCodeUrl">
+                            <a href="{{d.body.sourceCodeUrl}}" class="btn" target="_blank">
+                                <i class="material-icons">code</i>Source Code
+                            </a>
+                            <a href="{{d.body.appUrl}}" class="btn" target="_blank">
+                                <i class="material-icons">launch</i>Go To App</a>
+                        </div>
                     </div>
                 </div>
             </div>

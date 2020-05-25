@@ -63,4 +63,34 @@ ul {
     &.align_center {
         align-items: center;
     }
+
+    &.justify_center {
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    .row {
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+
+    .container {
+        width: auto;
+
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        width: auto;
+    }
+
+}
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: auto;
+    }
 }

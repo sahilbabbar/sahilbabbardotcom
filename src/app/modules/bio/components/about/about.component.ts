@@ -35,7 +35,7 @@ export class AboutComponent implements OnInit {
             },
             {
                 name: 'Blog',
-                url: 'blog/MigratingEnterpriseAngularAppToAnotherDesignSystem',
+                url: 'blog',
             },
         ];
     }
