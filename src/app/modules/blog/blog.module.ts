@@ -7,6 +7,7 @@ import {SharedModule} from '../shared/shared.module';
 import {PostPreviewComponent} from './components/post-preview/post-preview.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {MarkdownModule} from 'ngx-markdown';
+import { ScssQSComponent } from './components/scss-qs/scss-qs.component';
 
 @NgModule({
     imports: [
@@ -19,7 +20,7 @@ import {MarkdownModule} from 'ngx-markdown';
     exports: [
         PostPreviewComponent
     ],
-    declarations: [HomeComponent, PostComponent, PostPreviewComponent]
+    declarations: [HomeComponent, PostComponent, PostPreviewComponent, ScssQSComponent]
 })
 export class BlogModule {
 }

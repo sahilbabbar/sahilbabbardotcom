@@ -8,6 +8,12 @@
     img {
         width: 30vw;
     }
+
+    .blog-post_image {
+        img {
+            width: 50vw;
+        }
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -18,7 +24,6 @@
             width: 100%;
         }
     }
-
 }
 @media only screen and (max-width: 768px) {
     .container_post {
@@ -28,7 +33,6 @@
             width: 100%;
         }
     }
-
 }
 @media only screen and (max-width: 1024px) {
     .container_post {
@@ -37,12 +41,5 @@
         img {
             width: 70vw;
         }
-
     }
-}
-
-.blog-post_image {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
