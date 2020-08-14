@@ -73,7 +73,7 @@ A Sass stylesheet can be broken down into **Statements** and **Expressions**.
     <img src="assets/images/blog-posts/2.3.png" alt="Structure of Stylesheet Image" />
 </div>
 
-## **Statements**
+## Statements
 
 Statements are the building blocks of a Sass stylesheet. They are feature rich and let you do lots of logical stylesheet writing. A basic example of a statement can be:
 
