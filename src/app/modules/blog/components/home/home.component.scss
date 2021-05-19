@@ -2,108 +2,48 @@
 @import '../../../../../assets/styles/variables/typography';
 @import '../../../../../assets/styles/layout';
 
-.blog-container {
-    padding: 5vh 5vw;
-    width: 50vw;
-
-    .heading {
-        color: $primary-color;
-        font-family: $secondary-font;
-        font-size: 3vw;
-        font-weight: 300;
-        margin: 10px 0;
-    }
-
-    .sub-heading {
-        color: $secondary-color;
-        font-family: $primary-font;
-        font-size: 20px;
-        font-weight: 300;
-        margin: 10px 0 80px 0;
-    }
-}
-
-.card {
-    border-bottom: 3px solid $accent-color;
-    width: 20vw;
-
-    &-heading {
-        color: $primary-color;
-        font-family: $secondary-font; //TODO: Lato doesn't look great here.
-        font-size: 25px;
-        margin: 20px 0;
-    }
-
-    &-hashtags {
-        color: $muted-color;
-        font-family: $primary-font;
-        margin: 10px 0;
-
-        .hashtag:before {
-            content: '#';
-        }
-    }
-
-    &-description {
-        color: $secondary-color;
-        font-family: $primary-font; //TODO: Roboto doesn't look great here too.
-        font-size: 20px;
-        margin: 20px 0;
-    }
-
-    &-footer {
-        color: $muted-color;
-        font-family: $primary-font;
-        margin-bottom: 20px;
-    }
-
-    &:hover {
-        border-bottom: 6px solid $accent-color; //TODO: Add transition.
-        cursor: pointer;
-        transition: 0.3s;
-    }
-}
-
 .post_previews {
     display: flex;
-}
 
-.container_post_preview {
-    border-bottom: 2px solid #aaa;
-    transition: all 0.5s ease;
-    width: 30vw;
-
-    h4 {
-        color: $secondary-color;
-        margin-top: 0;
-        transition: color 0.5s ease-in;
-    }
-
-    &:hover {
-        cursor: pointer;
-        border-bottom: 10px solid $primary-color;
+    .container_post_preview {
+        border: 1px solid #e1e1e1;
+        transition: all 0.5s ease;
+        width: 25vw;
+        border-radius: 3px;
+        padding: 15px;
 
         h4 {
-            color: $primary-color;
+            color: $secondary-color;
+            margin-top: 0;
             transition: color 0.5s ease-in;
         }
-    }
 
-    &:nth-child(1) {
-        margin-right: 5%;
-    }
+        &:hover {
+            cursor: pointer;
+            border-color: $primary-color;
 
-    .hashtags {
-        display: flex;
-
-        div {
-            color: $muted-color;
-            font-family: $primary-font;
+            h4 {
+                color: $primary-color;
+                transition: color 0.5s ease-in;
+            }
         }
-    }
 
-    p {
-        margin: 2vw 0;
+        &:nth-child(1) {
+            margin-right: 5%;
+        }
+
+        .hashtags {
+            display: flex;
+
+            div {
+                color: $muted-color;
+                font-family: $primary-font;
+            }
+        }
+
+        p {
+            margin: 2vw 0;
+        }
     }
 }
 

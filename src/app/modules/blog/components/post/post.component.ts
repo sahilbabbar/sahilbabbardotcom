@@ -10,21 +10,7 @@ import { NavItem } from '../../../shared/utilities/NavItem';
 export class PostComponent implements OnInit {
     postNavItems: NavItem[];
 
-    constructor() {
-        const disqus_config = function () {
-            this.page.url =
-                'https://sahilbabbar.com/blog/MigratingEnterpriseAngularAppToAnotherDesignSystem';
-            this.page.identifier = 'BlogPost-Migrating-To-Another-DS';
-        };
-
-        (function () {
-            const d = document,
-                s = d.createElement('script');
-            s.src = 'https://sahilbabbar.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', String(+new Date()));
-            (d.head || d.body).appendChild(s);
-        })();
-    }
+    constructor() {}
 
     ngOnInit() {
         this.postNavItems = [

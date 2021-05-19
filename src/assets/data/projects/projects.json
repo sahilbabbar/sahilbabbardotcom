@@ -12,7 +12,7 @@
                         "App's UX was ideated from scratch - from paper wireframes to high-fidelity ones. And then the UIs were coded.",
                         "The blogging module, renders markdown pages into the final shape of a blog post.",
                         "Tech - Angular, HTML5, SCSS",
-                        "3PPs - Netlify, Disqus, Material Icons, Icons8, Google Fonts, ngx-markdown, normalize.css",
+                        "3PPs - Netlify, Material Icons, Icons8, Google Fonts, ngx-markdown, normalize.css",
                         "Open Source"
                     ],
                     "sourceCodeUrl": "https://github.com/sahilbabbar/sahilbabbardotcom/",
