@@ -1,0 +1,37 @@
+{
+    "projects": {
+        "data": [
+            {
+                "title": "Sahil Babbar Dot Com",
+                "startDate": "apr 2020",
+                "endDate": "may 2020",
+                "body": {
+                    "description": "Built a personal web space for my personal/professional information, along with my blog. The idea behind this project to have a place that can scale and hold all my information at one location. ",
+                    "bullets": [
+                        "This web app has been integrated with CI/CD using the awesomeness of Netlify and GitHub.",
+                        "App's UX was ideated from scratch - from paper wireframes to high-fidelity ones. And then the UIs were coded.",
+                        "The blogging module, renders markdown pages into the final shape of a blog post.",
+                        "Tech - Angular, HTML5, SCSS",
+                        "3PPs - Netlify, Material Icons, Icons8, Google Fonts, ngx-markdown, normalize.css",
+                        "Open Source"
+                    ],
+                    "sourceCodeUrl": "https://github.com/sahilbabbar/sahilbabbardotcom/",
+                    "appUrl": "https://sahilbabbar.com"
+                }
+            },
+            {
+                "title": "Ericsson Mediation UI SDK",
+                "institution": "Ericsson R&D",
+                "startDate": "mar 2018",
+                "endDate": "present",
+                "body": {
+                    "description": "Building upon an initial set of components of a UI SDK and making them production ready for development teams to build enterprise products upon it. Working closely with software, architecture and UX teams to design and develop new components as well as pushing the overall SDK towards stability and scalability; under minimal supervision.",
+                    "bullets": [
+                        "Tech - Angular, TypeScript, RxJS, HTML5, SCSS",
+                        "Closed Source"
+                    ]
+                }
+            }
+        ]
+    }
+}

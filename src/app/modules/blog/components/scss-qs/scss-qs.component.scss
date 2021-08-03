@@ -1,0 +1,45 @@
+@import '../../../../../assets/styles/variables/colors';
+@import '../../../../../assets/styles/variables/typography';
+
+.container_post {
+    padding: 70px 5vw 10vh 5vw;
+    width: 80vw;
+
+    img {
+        width: 30vw;
+    }
+
+    .blog-post_image {
+        img {
+            width: 50vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container_post {
+        width: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container_post {
+        width: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .container_post {
+        width: auto;
+
+        img {
+            width: 70vw;
+        }
+    }
+}

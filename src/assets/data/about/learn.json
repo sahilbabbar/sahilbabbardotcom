@@ -1,0 +1,16 @@
+{
+    "section": "learning",
+    "data": [
+        {
+            "title": "Bachelor of Technology, Computer Science Engineering",
+            "institution": "IIIT-Delhi",
+            "place": "New Delhi",
+            "startDate": "aug 2013",
+            "endDate": "dec 2017",
+            "body": {
+                "description": "Major coursework includes courses from Design, Software, IoT, Security & Entrepreneurship areas.",
+                "bullets": []
+            }
+        }
+    ]
+}

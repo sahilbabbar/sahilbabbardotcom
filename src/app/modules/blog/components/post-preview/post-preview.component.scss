@@ -1,0 +1,43 @@
+@import '../../../../../assets/styles/variables/typography';
+@import '../../../../../assets/styles/variables/colors';
+
+.container_post_preview {
+    border-bottom: 2px solid #aaa;
+    transition: all 0.5s ease;
+    width: 30vw;
+
+    h4 {
+        color: $secondary-color;
+        margin-top: 0;
+        transition: color 0.5s ease-in;
+    }
+
+    &:hover {
+        cursor: pointer;
+        border-bottom: 10px solid $primary-color;
+
+        h4 {
+            color: $primary-color;
+            transition: color 0.5s ease-in;
+        }
+    }
+
+    .hashtags {
+        display: flex;
+
+        div {
+            color: $muted-color;
+            font-family: $primary-font;
+        }
+    }
+
+    p {
+        margin: 2vw 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container_post_preview {
+        width: 100%;
+    }
+}

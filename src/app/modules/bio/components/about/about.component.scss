@@ -1,0 +1,19 @@
+@import '../../../../../assets/styles/variables/colors';
+@import '../../../../../assets/styles/variables/typography';
+@import '../../../../../assets/styles/layout';
+
+.section_about {
+    border-bottom: 1px solid #aaa;
+}
+.img_profile {
+    border-bottom: 3px solid $primary-color;
+    padding: 10px;
+    width: 150px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 425px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+}

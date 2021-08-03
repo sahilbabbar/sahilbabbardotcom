@@ -1,0 +1,41 @@
+{
+    "section": "recognition",
+    "data": [
+        {
+            "title": "Speaker, Experience Design Conference",
+            "place": "Ericsson HQ (Sweden)",
+            "date": "oct 2019",
+            "body": {
+                "description": "",
+                "bullets": []
+            }
+        },
+        {
+            "title": "Angular Developer Trainer",
+            "place": "Ericsson R&D",
+            "date": "apr 2019",
+            "body": {
+                "description": "",
+                "bullets": []
+            }
+        },
+        {
+            "title": "Ace Award (Q4 2018)",
+            "place": "Ericsson R&D",
+            "date": "feb 2019",
+            "body": {
+                "description": "",
+                "bullets": []
+            }
+        },
+        {
+            "title": "Among Top 10 Hacks (Hackathon)",
+            "place": "Ericsson R&D",
+            "date": "sep 2018",
+            "body": {
+                "description": "",
+                "bullets": []
+            }
+        }
+    ]
+}
