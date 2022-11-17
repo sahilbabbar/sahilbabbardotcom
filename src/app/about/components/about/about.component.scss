@@ -11,6 +11,10 @@ article:last-child {
     margin-right: 0;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 @media (width > 1440px) {
     main {
         align-items: center;

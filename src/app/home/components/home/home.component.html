@@ -23,7 +23,7 @@
                 Writing down experiences, studies, crisp tutorials & book reviews.
             </p>
             <ng-container *ngFor="let post of blogPosts">
-                <ez-card [data]="post"></ez-card>
+                <ez-card [data]="post" routerLink="/blog/{{post.id}}"></ez-card>
             </ng-container>
             <a routerLink="/blog">Read more posts<i class="icon icon-arrow-forward-outline margin-left-xsmall"></i></a>
         </div>
