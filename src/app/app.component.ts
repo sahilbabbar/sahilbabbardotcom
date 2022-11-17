@@ -1,104 +1,104 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { EzNavigation } from '@ezence/components/lib/functional-patterns/navigation/models/navigation.model';
-import { EzCard } from '@ezence/components/lib/functional-patterns/card/models/card.model';
-import { EzDialog } from '@ezence/components/lib/functional-patterns/dialog/models/dialog.model';
-import { EzFooterItem } from '@ezence/components/lib/functional-patterns/footer/models/footer-item.model';
-import { EzNotification } from '@ezence/components/lib/functional-patterns/notification/components/models/notification.model';
+import {
+    ChangeDetectionStrategy,
+    Component,
+    OnInit,
+    ViewEncapsulation
+} from '@angular/core';
+import posthog from 'posthog-js';
+import { filter } from 'rxjs';
+import { Title } from '@angular/platform-browser';
+import {
+    ActivatedRoute,
+    NavigationCancel,
+    NavigationEnd,
+    NavigationError,
+    NavigationStart,
+    Router
+} from '@angular/router';
+
+declare const gtag: Function;
 
 @Component({
     selector: 'sb-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-    navData!: EzNavigation;
+export class AppComponent implements OnInit {
+    title: string = 'PortfolioWebsite';
+    loadingDataImg: boolean = false;
 
-    navDataDemo!: EzNavigation;
+    constructor(
+        private router: Router,
+        private activatedRoute: ActivatedRoute,
+        private titleService: Title
+    ) {
+        router.events.subscribe((event) => {
+            this.navigationInterceptor(event);
+        });
 
-    cardDemo!: EzCard;
+        /** START : Code to Track Page View using gtag.js */
+        this.router.events
+            .pipe(filter((event) => event instanceof NavigationEnd))
+            .subscribe((event: any) => {
+                gtag('event', 'page_view', {
+                    page_path: event.urlAfterRedirects
+                });
+            });
+        /** END : Code to Track Page View  using gtag.js */
 
-    dialogData!: EzDialog;
+        //Add dynamic title for selected pages - Start
+        router.events.subscribe((event) => {
+            if (event instanceof NavigationEnd) {
+                var title = this.getTitle(
+                    router.routerState,
+                    router.routerState.root
+                ).join(' > ');
+                titleService.setTitle(title);
+            }
+        });
+        //Add dynamic title for selected pages - End
+    }
 
-    footerData!: EzFooterItem[];
+    ngOnInit() {
+        posthog.init('phc_auJaMgAHmstDKUjmzL6ZLZ3JC3ct3ABjfdjelS9LnaT', {
+            api_host: 'https://eu.posthog.com'
+        });
+    }
 
-    notificationData!: EzNotification;
+    // collect that title data properties from all child routes
+    // there might be a better way but this worked for me
+    getTitle(state: any, parent: any): any {
+        var data = [];
+        if (parent && parent.snapshot.data && parent.snapshot.data.title) {
+            data.push(parent.snapshot.data.title);
+        }
 
-    constructor() {}
+        if (state && parent) {
+            data.push(...this.getTitle(state, state.firstChild(parent)));
+        }
+        return data;
+    }
 
-    ngOnInit(): void {
-        this.footerData = [
-            {
-                label: 'Brand',
-            },
-            {
-                label: 'Link 1',
-                url: 'https://twitter.com',
-                position: 'right',
-            },
-            {
-                label: 'Link 2',
-                url: 'https://github.com',
-                position: 'right',
-            },
-        ];
+    // Shows and hides the loading spinner during RouterEvent changes
+    navigationInterceptor(event: any): void {
+        //Triggered When the navigation starts
+        if (event instanceof NavigationStart) {
+            this.loadingDataImg = true;
+        }
+        //Triggered When the navigation ends
+        if (event instanceof NavigationEnd) {
+            this.loadingDataImg = false;
+        }
 
-        this.navData = {
-            brand: {
-                label: 'Ezence',
-            },
-            links: [
-                {
-                    label: 'Home',
-                },
-                {
-                    label: 'Functional Patterns',
-                    href: 'functional-patterns',
-                },
-                {
-                    label: 'Perceptual Patterns',
-                    href: 'perceptual-patterns',
-                },
-            ],
-        };
-
-        this.navDataDemo = {
-            brand: {
-                label: 'Brand',
-            },
-            links: [
-                {
-                    label: 'Link 1',
-                },
-                {
-                    label: 'Link 2',
-                },
-                {
-                    label: 'Link 3',
-                },
-                {
-                    label: 'Link 4',
-                },
-                {
-                    label: 'Link 5',
-                },
-            ],
-        };
-
-        this.cardDemo = {
-            heading: 'Card heading should not be more than two lines',
-            body: 'This is a card body that has been put here for demo purpose.',
-            tag: 'Card Tag',
-        };
-
-        this.dialogData = {
-            heading: 'Default Dialog',
-            content:
-                'This is a default dialog i.e. with all the default settings.',
-        };
-
-        this.notificationData = {
-            message: 'This is a default notification message.',
-        };
+        // Set loading state to false in both of the below events to hide the spinner in case a request fails
+        if (event instanceof NavigationCancel) {
+            this.loadingDataImg = false;
+        }
+        //Triggered When the error occurrs while navigation
+        if (event instanceof NavigationError) {
+            this.loadingDataImg = false;
+        }
     }
 }

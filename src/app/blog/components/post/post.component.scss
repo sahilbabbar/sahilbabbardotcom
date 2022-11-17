@@ -1,0 +1,99 @@
+@import 'node_modules/@ezence/components/src/lib/perceptual-patterns/base/layout';
+
+markdown {
+
+    h3 {
+        color: $color-variant-black-1;
+    }
+
+    h2, h3 {
+        @include margin(top, large);
+    }
+
+    h4 {
+        @include margin(top, default);
+    }
+
+    h4 {
+        color: $color-secondary-blue;
+        font-weight: 500;
+    }
+
+    p {
+        line-height: 1.5;
+        @include margin(default);
+        @include margin(bottom, default);
+
+        &:first-of-type {
+            margin-top: 0;
+            @include margin(bottom, large);
+        }
+    }
+
+    blockquote {
+        border-left: 5px solid $color-primary-blue;
+
+        @include margin(bottom, default);
+        @include padding(all);
+
+        p {
+            margin: 0;
+
+            &:first-of-type {
+                color: $color-primary-blue;
+                @include margin(bottom, small);
+            }
+        }
+    }
+
+    sub {
+        bottom: -5px;
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+
+        @include margin(top, default);
+        @include margin(bottom, default);
+    }
+
+    ul, ol {
+        @include margin(left, large);
+    }
+
+    ul {
+        li {
+            line-height: 1.5;
+            & > p:first-of-type, & > p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    a {
+        display: inline-block;
+    }
+}
+
+@media (width > 1440px) {
+    main {
+        align-items: center;
+        width: unset;
+
+        & > article {
+            width: 60vw;
+        }
+    }
+}
+
+@media (width < 769px) {
+    markdown img {
+        width: 100%;
+    }
+}

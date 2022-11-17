@@ -1,0 +1,47 @@
+@import 'node_modules/@ezence/components/src/lib/perceptual-patterns/base/responsive';
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond-to('pad') {
+        align-items: unset;
+        flex-flow: column-reverse;
+    }
+
+    &-brief {
+        width: 60vw;
+
+        @include respond-to('phone') {
+            width: 100%;
+        }
+
+        h4 {
+            @include respond-to('phone') {
+                inline-size: 80vw;
+            }
+        }
+    }
+}
+
+.blogs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (width > 1440px) {
+    main {
+        align-items: center;
+
+        article[class|="bio"] {
+            width: 60vw;
+        }
+
+        section[class^="blogs"] {
+            width: 60vw;
+        }
+    }
+}

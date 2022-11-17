@@ -23,22 +23,35 @@
                         "polyfills": "src/polyfills.ts",
                         "tsConfig": "tsconfig.app.json",
                         "inlineStyleLanguage": "scss",
-                        "assets": ["src/favicon.ico", "src/assets"],
-                        "styles": ["src/styles.scss"],
-                        "scripts": []
+                        "assets": [
+                            "src/favicon.ico",
+                            "src/assets",
+                            "src/icons"
+                        ],
+                        "styles": [
+                            "src/styles.scss",
+                            "src/app/blog/styles/prism-nord.css",
+                            "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css"
+                        ],
+                        "scripts": [
+                            "node_modules/marked/marked.min.js",
+                            "node_modules/prismjs/prism.js",
+                            "node_modules/prismjs/components/prism-css.min.js",
+                            "node_modules/prismjs/components/prism-scss.min.js",
+                            "node_modules/prismjs/components/prism-typescript.min.js",
+                            "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js"
+                        ]
                     },
                     "configurations": {
                         "production": {
                             "budgets": [
                                 {
                                     "type": "initial",
-                                    "maximumWarning": "500kb",
-                                    "maximumError": "1mb"
+                                    "maximumWarning": "500kb"
                                 },
                                 {
                                     "type": "anyComponentStyle",
-                                    "maximumWarning": "2kb",
-                                    "maximumError": "4kb"
+                                    "maximumWarning": "2kb"
                                 }
                             ],
                             "fileReplacements": [
@@ -86,8 +99,13 @@
                         "tsConfig": "tsconfig.spec.json",
                         "karmaConfig": "karma.conf.js",
                         "inlineStyleLanguage": "scss",
-                        "assets": ["src/favicon.ico", "src/assets"],
-                        "styles": ["src/styles.scss"],
+                        "assets": [
+                            "src/favicon.ico",
+                            "src/assets"
+                        ],
+                        "styles": [
+                            "src/styles.scss"
+                        ],
                         "scripts": []
                     }
                 }

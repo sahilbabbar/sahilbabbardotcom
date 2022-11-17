@@ -1,0 +1,31 @@
+<main>
+    <article class="bio">
+        <div class="bio-brief">
+            <h1 class="heading-huge margin-top-large margin-bottom-default">Sahil Babbar<span class="color-var-black-1">r</span><span class="color-var-black-2">r</span></h1>
+            <h4>
+                Hey! This is Sahil Babbar's web space, who's been at the cross-roads of <strong>UI/Frontend Development & UX Design</strong>
+                in software engineering, since 2015, based in India.
+            </h4>
+            <h4>
+                Sahil is passionate & intrigued by the process of building useful & valuable interfaces -
+                from wireframing, talking to users, to coding it all up in a cutting-edge web framework.
+            </h4>
+        </div>
+        <figure>
+            <img class="ez-image" width='300px' alt='Profile Picture' src='assets/images/profile.png'>
+        </figure>
+    </article>
+
+    <section class="blogs margin-top-xlarge">
+        <div>
+            <h3 class="margin-bottom-small">Blog</h3>
+            <p class="margin-bottom-default color-var-black-1">
+                Writing down experiences, studies, crisp tutorials & book reviews.
+            </p>
+            <ng-container *ngFor="let post of blogPosts">
+                <ez-card [data]="post"></ez-card>
+            </ng-container>
+            <a routerLink="/blog">Read more posts<i class="icon icon-arrow-forward-outline margin-left-xsmall"></i></a>
+        </div>
+    </section>
+</main>
