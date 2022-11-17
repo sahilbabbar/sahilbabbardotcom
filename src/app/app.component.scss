@@ -1,0 +1,19 @@
+@import 'node_modules/@ezence/components/src/lib/perceptual-patterns/color-scheme/index';
+@import 'node_modules/@ezence/components/src/lib/perceptual-patterns/base/responsive';
+
+
+// Ezence Components
+ez-card .ez-card {
+    margin-bottom: var(--space-default);
+
+    @include respond-to('pad') {
+        max-width: 100%;
+    }
+}
+
+figure {
+    margin: 32px !important;
+    @include respond-to('pad') {
+        align-items: flex-start !important;
+    }
+}

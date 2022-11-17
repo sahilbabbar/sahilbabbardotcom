@@ -1,0 +1,23 @@
+img {
+    width: 50px;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+.job {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (width > 1440px) {
+    main {
+        align-items: center;
+        width: unset;
+
+        & > article, & > section {
+            width: 60vw;
+        }
+    }
+}
