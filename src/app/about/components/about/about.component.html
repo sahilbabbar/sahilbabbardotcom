@@ -1,4 +1,4 @@
-<main class="width-60vw">
+<main>
     <article class="margin-bottom-large">
         <h1>About</h1>
         <p *ngFor="let paragraph of intro | async; index as i" [class]="i != 0 ? 'margin-top-small' : ''">
@@ -8,7 +8,7 @@
     <section>
         <h3>Skills</h3>
         <p class="color-var-black-1 margin-bottom-default">Languages, frameworks and tools.</p>
-        <div class="flex-row flex-align-items-center">
+        <div class="flex-row flex-align-items-center flex-wrap">
             <img *ngFor="let skill of skills | async" [src]="skill.logo" [alt]="skill.name" class="margin-right-small">
         </div>
     </section>
