@@ -1,5 +1,10 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import {
+    Component,
+    HostListener,
+    OnInit,
+    ViewEncapsulation
+} from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
     selector: 'sb-post',
@@ -10,7 +15,11 @@ import { ActivatedRoute } from '@angular/router';
 export class PostComponent implements OnInit {
     postId!: string;
 
-    constructor(private route: ActivatedRoute) {}
+    @HostListener('window.reload') function() {
+        this.router.navigate(['/blog', this.postId]);
+    }
+
+    constructor(private route: ActivatedRoute, private router: Router) {}
 
     ngOnInit(): void {
         this.route.url.subscribe((url) => {

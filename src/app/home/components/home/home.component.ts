@@ -1,5 +1,11 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {
+    ChangeDetectionStrategy,
+    Component,
+    HostListener,
+    OnInit
+} from '@angular/core';
 import { EzCard } from '@ezence/components/lib/functional-patterns/card/models/card.model';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'sb-home',
@@ -10,7 +16,11 @@ import { EzCard } from '@ezence/components/lib/functional-patterns/card/models/c
 export class HomeComponent implements OnInit {
     blogPosts!: EzCard[];
 
-    constructor() {}
+    @HostListener('window.reload') function() {
+        this.router.navigate(['/home']);
+    }
+
+    constructor(private router: Router) {}
 
     ngOnInit(): void {
         this.blogPosts = [
