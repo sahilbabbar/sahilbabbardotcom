@@ -3,8 +3,7 @@
 
 This repository contains code to my personal web space/blog/portfolio website.
 
-# Structure
+# Information Architecture
+**Note:** Following is the proposed IA and everything is not yet in production.
 
-<img src="src/assets/images/ia.png" alt="Project Structure Diagram" style="width:700px;"/>
-
-# Release
+<img src="src/assets/images/ia.png" alt="Project Structure Diagram" style="width:500px;"/>

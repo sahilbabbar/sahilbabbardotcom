@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { DataService } from '../../../shared/services/data.service';
 import { BehaviorSubject } from 'rxjs';
+import { Router } from '@angular/router';
 
 interface Job {
     title: string;
@@ -49,7 +50,11 @@ export class AboutComponent implements OnInit {
 
     education = new BehaviorSubject<Education[] | undefined>(undefined);
 
-    constructor(private dataService: DataService) {}
+    @HostListener('window.reload') function() {
+        this.router.navigate(['/about']);
+    }
+
+    constructor(private dataService: DataService, private router: Router) {}
 
     ngOnInit() {
         this.getData();
