@@ -15,5 +15,12 @@ figure {
     margin: 32px !important;
     @include respond-to('pad') {
         align-items: flex-start !important;
+        margin: 0 !important;
+    }
+
+    @include respond-to('phone') {
+        img {
+            width: 200px;
+        }
     }
 }
