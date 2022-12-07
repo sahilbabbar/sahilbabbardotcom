@@ -17,10 +17,4 @@ figure {
         align-items: flex-start !important;
         margin: 0 !important;
     }
-
-    @include respond-to('phone') {
-        img {
-            width: 200px;
-        }
-    }
 }

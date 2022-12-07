@@ -47,6 +47,8 @@ export class AboutComponent implements OnInit {
 
     jobs = new BehaviorSubject<Job[] | undefined>(undefined);
 
+    volunteering = new BehaviorSubject<Job[] | undefined>(undefined);
+
     education = new BehaviorSubject<Education[] | undefined>(undefined);
 
     constructor(private dataService: DataService) {}
@@ -61,6 +63,7 @@ export class AboutComponent implements OnInit {
             this.skills.next(data[1]);
             this.jobs.next(data[2]);
             this.education.next(data[3]);
+            this.volunteering.next(data[4]);
         });
     }
 }
