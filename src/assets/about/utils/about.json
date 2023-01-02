@@ -150,7 +150,43 @@
             "brief": "Sahil owe a lot to his university which broadened his horizon about research, technology, software, design, and wonderful professors who encouraged exploring and experimenting.",
             "coursework": "Major coursework included courses from Design, Software, IoT, Security & Entrepreneurship."
         }
-
+    ],
+    [
+        {
+            "title": "Student Ambassador",
+            "company": "International Conference on Software Engineering",
+            "logo": "assets/about/volunteering/icse.png",
+            "duration": "June 2014",
+            "brief": "First ever conference attended, flew from Delhi to Hyderabad on first air trip. Got selected as a volunteer from over 150 applications(worldwide), with the help of education background and Prof. H.B. Acharya's recommendation. Learned a ton about different research areas(in software engineering specifically) and networking; met people from different parts of the world and lived together for a week."
+        },
+        {
+            "title": "Technologist (Part-Time)",
+            "company": "The Aashansh Foundation",
+            "logo": "assets/about/volunteering/aashansh.jpeg",
+            "duration": "January 2016 - July 2016",
+            "brief": "Responsible for leading the non-profit organisation towards technological goals, revolving around website development and teaching programming to children who were deprived of necessary resources. It was a brief period as the chairman was still exploring the organisation's future. Nothing substantial got done but got to know few processes."
+        },
+        {
+            "title": "Instructor",
+            "company": "CodersTrust",
+            "logo": "assets/about/volunteering/hourofcode.png",
+            "duration": "December 2015",
+            "brief": "Participated in Hour of Code, Code.org's initiative as an Instructor under CodersTrust. It was really fun teaching basics of computers and programming to few elementary class students who were quite willing to learn but didn't have the resources. It was a single day event and preparations were done few days in advance, where a core group of volunteers were formed. Also, this is where Aashansh's chairman met."
+        },
+        {
+            "title": "Campus Ambassador",
+            "company": "MyPoolin",
+            "logo": "assets/about/volunteering/mypoolin.png",
+            "duration": "October 2014 - November 2014",
+            "brief": "Responsible for spreading awareness about MyPoolin on IIIT-D campus via social media. Nothing substantial got done in this direction, but MyPoolin was at nascent stage during that time and it allowed to get direct access to Co-founders. This helped to understand their mindset and got introduced to the world of entrepreneurship. Went to startup fairs(only one at IIT-Delhi) and spent sometime with co-founders physically(also virtually on calls)."
+        },
+        {
+            "title": "Stock Verifier",
+            "company": "IIIT-D Library",
+            "logo": "assets/about/university-1.png",
+            "duration": "December 2013",
+            "brief": "Volunteered to do periodic library chores at campus like verifying stock, putting books in correct slots, etc. This gave exposure different types of books, their specific book-keeping requirements, tech magazines, etc and made good friends with library staff(which consisted of 2-3 people at that time). This one month volunteering provided with the first ever pay check!"
+        }
     ]
 ]
 

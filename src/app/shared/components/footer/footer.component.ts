@@ -15,10 +15,10 @@ export class FooterComponent implements OnInit {
     ngOnInit(): void {
         this.footerData = [
             {
-                label: "Sahil Babbar's Web Space v3.0.1"
+                label: "Sahil Babbar's Web Space"
             },
             {
-                label: '2018 - 2022, MIT Licensed.',
+                label: '(v3.0) 2018 - 2023, MIT Licensed.',
                 position: 'left',
                 css: 'margin-top-small color-var-black-1-imp' // TODO: use BEM
             },
@@ -30,11 +30,6 @@ export class FooterComponent implements OnInit {
             {
                 icon: 'twitter',
                 url: 'https://twitter.com/sahilbabbarrr',
-                position: 'right'
-            },
-            {
-                icon: 'instagram',
-                url: 'https://instagram.com/sahilbabbarrr',
                 position: 'right'
             },
             {

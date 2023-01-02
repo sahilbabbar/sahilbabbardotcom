@@ -14,7 +14,7 @@
     </section>
     <section>
         <h3>Work</h3>
-        <p class="color-var-black-1 margin-bottom-default">Past and present about professional work.</p>
+        <p class="color-var-black-1 margin-bottom-default">Professional work experience and relevant details</p>
         <article class="job" *ngFor="let job of jobs | async; index as i" [class]="i !=0 ? 'margin-top-large': ''">
             <div class="flex-row flex-align-items-start">
                 <img class="margin-top-xsmall" [src]="job.logo">
@@ -43,8 +43,38 @@
         </article>
     </section>
     <section>
+        <h3>Volunteering</h3>
+        <p class="color-var-black-1 margin-bottom-default">Applying professional skills for a cause and experience</p>
+        <article class="job" *ngFor="let job of volunteering | async; index as i" [class]="i !=0 ? 'margin-top-large': ''">
+            <div class="flex-row flex-align-items-start">
+                <img class="margin-top-xsmall" [src]="job.logo">
+                <div class="margin-left-small">
+                    <div class="text-bold-1 margin-bottom-xsmall">{{ job.title }}</div>
+                    <div class="text-bold-1 margin-bottom-xsmall">{{ job.company }} <span class="color-var-black-1" *ngIf="job.unit">({{ job.unit }})</span></div>
+                    <div class="text-bold-1 color-var-black-1 margin-bottom-xsmall">{{ job.duration }}</div>
+                    <div class="margin-top-small">
+                        {{ job.brief }}
+                        <ul class="margin-top-small margin-bottom-default" *ngIf="job.details?.length">
+                            <li *ngFor="let detail of job.details">{{ detail }}</li>
+                        </ul>
+                        <div *ngIf="job.recognition?.length">
+                            <strong class="color-primary-blue">Recognition</strong>
+                            <ul class="margin-top-small">
+                                <li *ngFor="let award of job.recognition">
+                                    <div class="text-bold-1">{{ award.title }}</div>
+                                    <div class="color-var-black-1 margin-bottom-xsmall">{{ award.date}}</div>
+                                    <p>{{ award.description }}</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
         <h3>Education</h3>
-        <p class="color-var-black-1 margin-bottom-default">Languages, frameworks and tools that I am good with.</p>
+        <p class="color-var-black-1 margin-bottom-default">Academic qualifications that lay the foundation of professional work</p>
         <article class="job" *ngFor="let ed of education | async; index as i" [ngStyle]="{'margin-top': i != 0 ? '64px': ''}">
             <div class="flex-row flex-align-items-start">
                 <img class="margin-top-small" [src]="ed.logo">
