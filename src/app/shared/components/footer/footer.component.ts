@@ -18,7 +18,7 @@ export class FooterComponent implements OnInit {
                 label: "Sahil Babbar's Web Space"
             },
             {
-                label: '(v3.0) 2018 - 2022, MIT Licensed.',
+                label: '(v3.0) 2018 - 2023, MIT Licensed.',
                 position: 'left',
                 css: 'margin-top-small color-var-black-1-imp' // TODO: use BEM
             },

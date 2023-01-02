@@ -6,17 +6,20 @@ const routes: Routes = [
     {
         path: 'home',
         loadChildren: () =>
-            import('./home/home.module').then((m) => m.HomeModule)
+            import('./home/home.module').then((m) => m.HomeModule),
+        title: "Sahil Babbar's Webspace"
     },
     {
         path: 'blog',
         loadChildren: () =>
-            import('./blog/blog.module').then((m) => m.BlogModule)
+            import('./blog/blog.module').then((m) => m.BlogModule),
+        title: "Blog - Sahil Babbar's Webspace"
     },
     {
         path: 'about',
         loadChildren: () =>
-            import('./about/about.module').then((m) => m.AboutModule)
+            import('./about/about.module').then((m) => m.AboutModule),
+        title: "About - Sahil Babbar's Webspace"
     },
     {
         path: '',
