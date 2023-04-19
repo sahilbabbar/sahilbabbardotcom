@@ -1,9 +1,9 @@
-[
-    [
+{
+    "Brief": [
         "Sahil has been brought up among computers, by programmer parents since childhood, so his natural inclination is towards technology. His professional journey began in 2015, from a home-grown startup and then things progressed from there. Over the years, he has been fortunate to work in different areas with different teams across different size companies, startups and corporates, involving Software Engineering and Development, User Experience Design, DevOps, Security.",
         "But, along the way Sahil found his calling in design and thus, has been building and working with user interfaces, particularly Frontend Development and User Experience Design."
     ],
-    [
+    "Skills": [
         {
             "name": "HTML",
             "logo": "assets/about/skills/skill-1.svg"
@@ -49,7 +49,7 @@
             "logo": "assets/about/skills/skill-12.svg"
         }
     ],
-    [
+    "Work": [
         {
             "title": "Senior Software Analyst - UX & UI",
             "company": "Ericsson Global India",
@@ -141,24 +141,7 @@
             "recognition": []
         }
     ],
-    [
-        {
-            "university": "Indraprastha Institute of Information Technology (IIIT-D)",
-            "degree": "Bachelor of Technology, Computer Science Engineering",
-            "logo": "assets/about/university-1.png",
-            "duration": "2013-2017",
-            "brief": "Sahil owe a lot to his university which broadened his horizon about research, technology, software, design, and wonderful professors who encouraged exploring and experimenting.",
-            "coursework": "Major coursework included courses from Design, Software, IoT, Security & Entrepreneurship."
-        }
-    ],
-    [
-        {
-            "title": "Student Ambassador",
-            "company": "International Conference on Software Engineering",
-            "logo": "assets/about/volunteering/icse.png",
-            "duration": "June 2014",
-            "brief": "First ever conference attended, flew from Delhi to Hyderabad on first air trip. Got selected as a volunteer from over 150 applications(worldwide), with the help of education background and Prof. H.B. Acharya's recommendation. Learned a ton about different research areas(in software engineering specifically) and networking; met people from different parts of the world and lived together for a week."
-        },
+    "Volunteering": [
         {
             "title": "Technologist (Part-Time)",
             "company": "The Aashansh Foundation",
@@ -181,12 +164,28 @@
             "brief": "Responsible for spreading awareness about MyPoolin on IIIT-D campus via social media. Nothing substantial got done in this direction, but MyPoolin was at nascent stage during that time and it allowed to get direct access to Co-founders. This helped to understand their mindset and got introduced to the world of entrepreneurship. Went to startup fairs(only one at IIT-Delhi) and spent sometime with co-founders physically(also virtually on calls)."
         },
         {
+            "title": "Student Ambassador",
+            "company": "International Conference on Software Engineering",
+            "logo": "assets/about/volunteering/icse.png",
+            "duration": "June 2014",
+            "brief": "First ever conference attended, flew from Delhi to Hyderabad on first air trip. Got selected as a volunteer from over 150 applications(worldwide), with the help of education background and Prof. H.B. Acharya's recommendation. Learned a ton about different research areas(in software engineering specifically) and networking; met people from different parts of the world and lived together for a week."
+        },
+        {
             "title": "Stock Verifier",
             "company": "IIIT-D Library",
             "logo": "assets/about/university-1.png",
             "duration": "December 2013",
             "brief": "Volunteered to do periodic library chores at campus like verifying stock, putting books in correct slots, etc. This gave exposure different types of books, their specific book-keeping requirements, tech magazines, etc and made good friends with library staff(which consisted of 2-3 people at that time). This one month volunteering provided with the first ever pay check!"
         }
+    ],
+    "Education": [
+        {
+            "university": "Indraprastha Institute of Information Technology (IIIT-D)",
+            "degree": "Bachelor of Technology, Computer Science Engineering",
+            "logo": "assets/about/university-1.png",
+            "duration": "2013-2017",
+            "brief": "Sahil owe a lot to his university which broadened his horizon about research, technology, software, design, and wonderful professors who encouraged exploring and experimenting.",
+            "coursework": "Major coursework included courses from Design, Software, IoT, Security & Entrepreneurship."
+        }
     ]
-]
-
+}

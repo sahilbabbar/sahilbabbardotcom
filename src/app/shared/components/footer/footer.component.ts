@@ -18,12 +18,12 @@ export class FooterComponent implements OnInit {
                 label: "Sahil Babbar's Web Space"
             },
             {
-                label: '(v3.0) 2018 - 2023, MIT Licensed.',
+                label: '(v3.0.8) 2018 - 2023, MIT Licensed.',
                 position: 'left',
                 css: 'margin-top-small color-var-black-1-imp' // TODO: use BEM
             },
             {
-                label: 'Handcrafted with Ezence',
+                label: 'Handcrafted with Ezence Design',
                 position: 'left',
                 css: 'margin-top-small color-var-black-1-imp' // TODO: use BEM
             },
@@ -33,13 +33,8 @@ export class FooterComponent implements OnInit {
                 position: 'right'
             },
             {
-                icon: 'github',
-                url: 'https://github.com/sahilbabbar',
-                position: 'right'
-            },
-            {
                 icon: 'linkedin',
-                url: 'https://linkedin.com/1sahilbabbar',
+                url: 'https://www.linkedin.com/in/1sahilbabbar/',
                 position: 'right'
             }
         ];
