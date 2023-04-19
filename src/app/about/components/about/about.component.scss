@@ -1,3 +1,10 @@
+@import 'node_modules/@ezence/components/src/lib/perceptual-patterns/base/spacing';
+@import 'node_modules/@ezence/components/src/lib/perceptual-patterns/base/responsive';
+
+h3 {
+    margin-bottom: 0; // TODO: change in Ezence
+}
+
 img {
     width: 50px;
 }
@@ -6,9 +13,71 @@ article:last-child {
     margin-bottom: 0;
 }
 
-.job {
-    margin-left: 0;
-    margin-right: 0;
+.jobs {
+    .job {
+        margin-left: 0;
+        margin-right: 0;
+
+        &-head {
+            display: flex;
+            flex-direction: row;
+            @include respond-to('phone') {
+                flex-direction: column;
+            }
+            div:nth-child(2) {
+                flex: 1;
+            }
+
+            img {
+                height: fit-content;
+                @include margin(top, xsmall);
+                @include margin(right, default);
+                @include respond-to('phone') {
+                    @include margin(bottom, small);
+                }
+            }
+
+            div:first-child {
+                align-items: flex-start;
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        &-title, &-subtitle {
+            font-weight: 500;
+        }
+
+        &-duration {
+            color: $color-variant-black-1;
+        }
+
+        &-body {
+            margin-left: 75px;
+            @include margin(top, small);
+            @include respond-to('phone') {
+                margin-left: 0;
+            }
+
+            ul {
+                @include margin(top, small);
+                @include margin(bottom, default);
+            }
+
+            &-recognition {
+                border: 1px solid $color-primary-blue;
+                border-radius: 3px;
+                padding-left: 25px;
+                padding-top: 10px;
+                padding-right: 25px;
+                width: calc(60vw/2);
+
+                @include respond-to('large') {
+                    width: calc(100% - 50px);
+                }
+            }
+        }
+    }
 }
 
 .flex-wrap {

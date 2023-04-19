@@ -59,11 +59,11 @@ export class AboutComponent implements OnInit {
 
     getData() {
         this.dataService.getAboutData().subscribe((data) => {
-            this.intro.next(data[0]);
-            this.skills.next(data[1]);
-            this.jobs.next(data[2]);
-            this.education.next(data[3]);
-            this.volunteering.next(data[4]);
+            this.intro.next(data['Brief']);
+            this.skills.next(data['Skills']);
+            this.jobs.next(data['Work']);
+            this.education.next(data['Education']);
+            this.volunteering.next(data['Volunteering']);
         });
     }
 }
