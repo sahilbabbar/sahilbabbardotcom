@@ -18,12 +18,12 @@ export class FooterComponent implements OnInit {
                 label: "Sahil Babbar's Web Space"
             },
             {
-                label: '(v3.0.8) 2018 - 2023, MIT Licensed.',
+                label: '(v3.0.9) 2018 - 2024, MIT Licensed.',
                 position: 'left',
                 css: 'margin-top-small color-var-black-1-imp' // TODO: use BEM
             },
             {
-                label: 'Handcrafted with Ezence Design',
+                label: 'Handcrafted with Essence Design System',
                 position: 'left',
                 css: 'margin-top-small color-var-black-1-imp' // TODO: use BEM
             },
