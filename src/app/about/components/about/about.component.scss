@@ -29,6 +29,7 @@ article:last-child {
             }
 
             img {
+                height: intrinsic !important;
                 height: fit-content;
                 @include margin(top, xsmall);
                 @include margin(right, default);
