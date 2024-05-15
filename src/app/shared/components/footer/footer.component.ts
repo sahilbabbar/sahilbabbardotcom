@@ -34,7 +34,7 @@ export class FooterComponent implements OnInit {
             },
             {
                 icon: 'linkedin',
-                url: 'https://www.linkedin.com/in/1sahilbabbar/',
+                url: 'https://www.linkedin.com/in/sahilbabbarrr/',
                 position: 'right'
             }
         ];
