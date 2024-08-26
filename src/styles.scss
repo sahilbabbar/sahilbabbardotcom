@@ -1,9 +1,26 @@
-@import 'node_modules/@ezence/components/src/lib/perceptual-patterns/base/index.scss';
-@import 'node_modules/@ezence/components/src/lib/perceptual-patterns/iconography/icons';
+@import 'app/assets/global.scss';
 
-@include respond-to('phone') {
-    section {
-        margin-left: 0;
-        margin-right: 0;
-    }
+html {
+    height: 100%;
 }
+
+body {
+    border-top: 20px solid blue;
+    font-family: $primary-font;
+    height: calc(100% - 20px);
+    margin: 0;
+    padding: 0;
+}
+
+sb-root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.view {
+    margin: 50px 10vw;
+}
+
+
