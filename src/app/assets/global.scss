@@ -1,0 +1,114 @@
+/* Colors */
+$primary-blue: #0861E7;
+$primary-black: #000;
+$primary-white: #FFF;
+
+$secondary-blue: #032E6E;
+$secondary-purple: #4B2840;
+$secondary-red: #F06543;
+$secondary-orange: #FF8600;
+$secondary-green: #09BC8A;
+
+$variant-blue: #A3CEF1;
+$variant-black-1: #50514F;
+$variant-black-2: #8A8A8A;
+$variant-black-3: #C4CAD0;
+
+/* Fonts */
+$primary-font: 'Inter', sans-serif;
+$accent-font: 'Yelena', cursive;
+$font-size-body: 18px;
+
+a {
+    color: $variant-black-2;
+    letter-spacing: -1.25px;
+    text-decoration: none;
+
+    &:hover {
+        color: $variant-black-1;
+    }
+}
+
+p {
+    font-size: $font-size-body;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+h1 {
+    color: $primary-blue;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    margin: 10px 0;
+}
+
+h3 {
+    color: $secondary-purple;
+    letter-spacing: -1.25px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+footer {
+    align-items: center;
+    background-color: $variant-black-3;
+    color: $variant-black-1;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: -1.25px;
+    min-height: 50px;
+    padding: 0 10vw;
+
+    div {
+        opacity: 0.5;
+    }
+}
+
+.initials {
+    color: $variant-blue;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 50px;
+}
+
+.tagline {
+    color: $secondary-blue;
+    font-size: $font-size-body;
+    font-weight: 500;
+    letter-spacing: -1.25px;
+}
+
+.bio {
+    margin: 25px 0;
+}
+
+.quote {
+    color: $variant-blue;
+    font-family: $accent-font;
+    font-size: 30px;
+    transform: rotate(-15deg);
+    margin-top: -25px;
+    width: 100%;
+
+    &-tiny {
+        color: $variant-black-1;
+        font-family: $accent-font;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    footer {
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding-bottom: 2%;
+        padding-top: 2%;
+
+        .quote-tiny {
+            margin-bottom: 2%;
+        }
+    }
+}
