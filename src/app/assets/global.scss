@@ -1,20 +1,27 @@
 /* Colors */
-$primary-blue: #0861E7;
+$primary-blue: #0861e7;
 $primary-black: #000;
-$primary-white: #FFF;
+$primary-white: #fff;
 
-$secondary-blue: #032E6E;
-$secondary-purple: #4B2840;
-$secondary-red: #F06543;
-$secondary-orange: #FF8600;
-$secondary-green: #09BC8A;
+$secondary-blue: #032e6e;
+$secondary-purple: #4b2840;
+$secondary-red: #f06543;
+$secondary-orange: #ff8600;
+$secondary-green: #09bc8a;
 
-$variant-blue: #A3CEF1;
-$variant-black-1: #50514F;
-$variant-black-2: #8A8A8A;
-$variant-black-3: #C4CAD0;
+$variant-blue: #a3cef1;
+$variant-black-1: #50514f;
+$variant-black-2: #8a8a8a;
+$variant-black-3: #c4cad0;
 
 /* Fonts */
+@font-face {
+    font-family: 'Yelena';
+    src: url(fonts/YelenaBold.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $primary-font: 'Inter', sans-serif;
 $accent-font: 'Yelena', cursive;
 $font-size-body: 18px;

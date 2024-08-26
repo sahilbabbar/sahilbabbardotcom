@@ -1,5 +1,17 @@
 @import 'app/assets/global.scss';
 
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings:
+        'liga' 1,
+        'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
 html {
     height: 100%;
 }
@@ -22,5 +34,3 @@ sb-root {
 .view {
     margin: 50px 10vw;
 }
-
-
