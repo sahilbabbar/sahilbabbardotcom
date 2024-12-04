@@ -1,4 +1,4 @@
-/* Colors */
+/* ---------- Colors ---------- */
 $primary-blue: #0861e7;
 $primary-black: #000;
 $primary-white: #fff;
@@ -14,7 +14,7 @@ $variant-black-1: #50514f;
 $variant-black-2: #8a8a8a;
 $variant-black-3: #c4cad0;
 
-/* Fonts */
+/* ---------- Typography ---------- */
 @font-face {
     font-family: 'Yelena';
     src: url('/fonts/YelenaBold.ttf') format('truetype');
@@ -28,22 +28,27 @@ $font-size-body: 18px;
 
 a {
     color: $variant-black-2;
+    font-size: 18px;
     letter-spacing: -1.25px;
     text-decoration: none;
+    transition: all 1s ease-in-out;
 
     &:hover {
         color: $variant-black-1;
+        cursor: pointer;
     }
 }
 
 p {
     font-size: $font-size-body;
+    font-weight: 300;
     letter-spacing: -1px;
     margin: 0;
 }
 
 h1 {
     color: $primary-blue;
+    font-size: 32px; // TODO: add responsive font sizes
     font-weight: 600;
     letter-spacing: -1.5px;
     margin: 10px 0;
@@ -53,30 +58,7 @@ h3 {
     color: $secondary-purple;
     letter-spacing: -1.25px;
     text-transform: uppercase;
-    margin: 10px 0;
-}
-
-footer {
-    align-items: center;
-    background-color: $variant-black-3;
-    color: $variant-black-1;
-    display: flex;
-    justify-content: space-between;
-    letter-spacing: -1.25px;
-    min-height: 50px;
-    padding: 0 10vw;
-
-    div {
-        opacity: 0.5;
-    }
-}
-
-.initials {
-    color: $variant-blue;
-    font-size: 20px;
-    font-weight: 900;
-    letter-spacing: -2px;
-    margin-bottom: 50px;
+    margin: 20px 0;
 }
 
 .tagline {
@@ -84,10 +66,6 @@ footer {
     font-size: $font-size-body;
     font-weight: 500;
     letter-spacing: -1.25px;
-}
-
-.bio {
-    margin: 25px 0;
 }
 
 .quote {
@@ -107,15 +85,27 @@ footer {
     }
 }
 
-@media (max-width: 800px) {
-    footer {
-        flex-direction: column-reverse;
-        height: fit-content;
-        padding-bottom: 2%;
-        padding-top: 2%;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-        .quote-tiny {
-            margin-bottom: 2%;
-        }
+    li {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+    }
+}
+
+/* ---------- Layout ---------- */
+main {
+    margin: 50px 20vw;
+}
+
+@media (max-width: 800px) {
+    main {
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 }

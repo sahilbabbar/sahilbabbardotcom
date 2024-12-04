@@ -1,0 +1,29 @@
+@import '../../../shared/styles/global';
+
+footer {
+    align-items: center;
+    background-color: $variant-black-3;
+    color: $variant-black-1;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: -1.25px;
+    min-height: 50px;
+    padding: 0 10vw;
+
+    div {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 800px) {
+    footer {
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding-bottom: 2%;
+        padding-top: 2%;
+
+        .quote-tiny {
+            margin-bottom: 2%;
+        }
+    }
+}
