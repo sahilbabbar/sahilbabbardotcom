@@ -1,4 +1,4 @@
-@import 'app/assets/global.scss';
+@import 'app/shared/styles/global';
 
 :root {
     font-family: Inter, sans-serif;
@@ -22,15 +22,4 @@ body {
     height: calc(100% - 20px);
     margin: 0;
     padding: 0;
-}
-
-sb-root {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.view {
-    margin: 50px 10vw;
 }

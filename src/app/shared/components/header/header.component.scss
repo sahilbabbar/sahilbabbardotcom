@@ -1,0 +1,17 @@
+@import '../../../shared/styles/global';
+
+
+.initials {
+    color: $variant-blue;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin: 50px 20vw;
+}
+
+@media (max-width: 800px) {
+    .initials {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
