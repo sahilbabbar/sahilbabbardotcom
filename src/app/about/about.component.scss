@@ -1,0 +1,13 @@
+@import '../shared/styles/global';
+
+.sb-img-strip {
+    display: flex;
+    gap: 10px;
+
+    img {
+        flex: 1;
+        height: auto;
+        width: 33.33%;
+        object-fit: cover;
+    }
+}
