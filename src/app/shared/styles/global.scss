@@ -16,34 +16,64 @@ $variant-black-3: #c4cad0;
 
 /* ---------- Typography ---------- */
 $primary-font: 'Inter', sans-serif;
-$accent-font: 'Lavishly Yours', cursive;
+$accent-font: 'Corinthia', cursive;
 $font-size-body: 18px;
 
 a {
-    color: $variant-black-2;
+    color: $secondary-blue;
     font-size: 18px;
     letter-spacing: -1.25px;
     text-decoration: none;
     transition: all 1s ease-in-out;
 
     &:hover {
-        color: $variant-black-1;
+        color: $primary-blue;
         cursor: pointer;
+    }
+}
+
+button {
+    background: $variant-black-3;
+    border: 1px solid $variant-black-2;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 8px 16px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.primary {
+        background: $primary-blue;
+        border: 1px solid $primary-blue;
+        color: $primary-white;
+
+        &:hover {
+            background: $secondary-blue;
+            border-color: $secondary-blue;
+        }
+
+        &-outline {
+            background: $primary-white;
+            border-color: $primary-blue;
+            color: $primary-blue;
+        }
     }
 }
 
 p {
     font-size: $font-size-body;
     font-weight: 300;
-    letter-spacing: -1px;
+    letter-spacing: -0.75px;
+    line-height: 24px;
     margin: 0;
 }
 
 h1 {
     color: $primary-blue;
     font-size: 32px; // TODO: add responsive font sizes
-    font-weight: 600;
-    letter-spacing: -1.5px;
+    font-weight: 700;
+    letter-spacing: -2px;
     margin: 10px 0;
 }
 
@@ -54,26 +84,27 @@ h3 {
     margin: 20px 0;
 }
 
+h4 {
+    letter-spacing: -0.5px;
+}
+
 .tagline {
     color: $secondary-blue;
     font-size: $font-size-body;
-    font-weight: 500;
-    letter-spacing: -1.25px;
+    letter-spacing: -1px;
 }
 
 .quote {
-    color: $variant-blue;
+    color: $secondary-blue;
     font-family: $accent-font;
     font-size: 30px;
-    transform: rotate(-15deg);
-    margin-top: -25px;
     width: 100%;
 
     &-tiny {
         color: $variant-black-1;
         font-family: $accent-font;
         font-size: 16px;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         text-align: center;
     }
 }
@@ -91,14 +122,68 @@ ul {
     }
 }
 
+img.sb-img {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px $variant-black-3;
+
+    &-default {
+        border-radius: 5px;
+        box-shadow: 0px 10px 20px 5px $variant-black-3;
+        width: 150px;
+    }
+}
+
+
 /* ---------- Layout ---------- */
-main {
-    margin: 50px 20vw;
+section.sb-page {
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-between;
+    height: calc(100vh - 212px);
+    overflow: auto;
+    padding: 150px 30vw;
 }
 
 @media (max-width: 800px) {
-    main {
-        margin-left: 10vw;
-        margin-right: 10vw;
+    section.sb-page {
+        //padding-left: 10vw;
+        //padding-right: 10vw;
     }
+}
+
+section.sb-flex {
+    &-col {
+        display: flex;
+        flex-direction: column;
+    }
+    &-row {
+        display: flex;
+    }
+}
+
+.sb-card {
+    background-size: cover;
+    border: 1px solid $variant-black-3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 20vh;
+    padding: 10px;
+
+    h4 {
+        backdrop-filter: blur(8px);
+        border-radius: 8px;
+        padding: 6px 10px;
+        -webkit-backdrop-filter: blur(6px);
+    }
+
+    img {
+
+    }
+}
+
+.sb-flourish {
+    margin: 100px auto;
+    width: 5vw;
 }

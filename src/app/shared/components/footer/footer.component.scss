@@ -6,12 +6,18 @@ footer {
     color: $variant-black-1;
     display: flex;
     justify-content: space-between;
-    letter-spacing: -1.25px;
+    letter-spacing: -1px;
     min-height: 50px;
     padding: 0 10vw;
 
     div {
+        font-weight: 300;
+        font-family: monospace;
         opacity: 0.5;
+    }
+
+    a {
+        font-size: unset;
     }
 }
 
